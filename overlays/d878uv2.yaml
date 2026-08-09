@@ -1,0 +1,69 @@
+# AT-D878UV II
+#
+# Physical layout (handheld, per qdmr manual ch04s04 "Keypad settings"):
+#   P1, P2      - two keys below/beside the display   -> funcKey1, funcKey2
+#   PF1 ("A")   - first button below PTT              -> funcKeyA
+#   PF2 ("B")   - second button below PTT              -> funcKeyB
+#   PF3 ("C")   - the orange key on top                -> funcKeyC
+#   funcKey3-6, funcKeyD, funcKnob don't exist as physical buttons on this
+#   radio (funcKeyD and funcKnob are D578UV-mic/knob only) - always Off.
+#
+# Press lengths: Short / Long on P1,P2,PF1-3. PF1-3 also support VeryLong.
+# `longPressDuration` sets the short->long threshold; there's no separate
+# very-long threshold field (firmware default applies).
+
+settings:
+  anytone:
+    keySettings:
+      # --- P1 / P2 (below display) ---
+      funcKey1Short: ChannelType     # P1 short: cycle channel type (FM/DMR/Mixed)
+      funcKey1Long: Scan             # P1 long:  start/stop scan on current channel
+      funcKey2Short: Monitor         # P2 short: open squelch to monitor weak/mismatched signal
+      funcKey2Long: Off              # can't have another fuction on the monitor button
+
+      # --- PF1 ("A"), first button below PTT ---
+      funcKeyAShort: ToggleVFO      # PF1 short: cycle TX power (High/Mid/Low/...)
+      funcKeyALong: Power           # PF1 long:  toggle VFO <-> memory/channel mode
+      funcKeyAVeryLong: Off
+
+      # --- PF2 ("B"), second button below PTT ---
+      funcKeyBShort: ToggleMainChannel  # PF2 short: swap which VFO (A/B) is "main" (the one PTT transmits on)
+      funcKeyBLong: SubChannel          # PF2 long:  enable/disable the sub-channel (dual-watch)
+      funcKeyBVeryLong: Off
+
+      # --- PF3 ("C"), the orange key on top ---
+      funcKeyCShort: Record           
+      funcKeyCLong: RecordSwitch            
+
+      # --- Global key-behavior settings ---
+      longPressDuration: 1 s   # hold time before a press counts as "Long"
+      autoKeyLock: false       # auto-lock keypad after inactivity
+      sideKeysLock: false      # whether PF1-PF3 lock when key-lock engages
+      forcedKeyLock: false     # commercial-only "can't manually unlock" mode - leave false
+
+positioning:
+  - aprs:
+      id: aprs1                # internal reference id; channels attach to it via `aprs: aprs1`
+      name: APRS APAT81        # display name shown in qdmr / on the radio
+      revert: ch358             # channel the radio switches to in order to transmit the beacon (144.39 "APRS Analog")
+      icon: Car                 # APRS map icon (fuzzy-matched by name, not an exact icon ID)
+      message: KR6A             # free-text status appended to each position report
+      anytone:                  # AnyTone-specific FM APRS tuning (device-wide, single profile)
+        txDelay: 60 ms         # delay before TX starts; qdmr's documented default is 60ms — this is 10x that, worth double-checking it isn't a units slip
+        preWaveDelay: 60 ms    # delay between key-up and the actual APRS data; qdmr's documented default is 0ms — also unusually high
+        passAll: false          # if true, disables the CRC check on received APRS packets — leave false
+        reportPosition: true    # send GPS position reports
+        reportMicE: true        # send Mic-E encoded position reports
+        reportObject: true      # send APRS "object" reports
+        reportItem: true        # send APRS "item" reports
+        reportMessage: true     # send APRS text messages
+        reportWeather: false    # no weather station attached
+        reportNMEA: false       # don't forward raw NMEA sentences
+        reportStatus: false     # no APRS status reports
+        reportOther: false      # no other/misc report types
+        frequencies:
+          []                    # extra APRS TX/RX frequencies beyond the revert channel's; none defined
+      period: 0                  # automatic beacon interval in seconds — 0 likely means "no automatic beacon," position sent only on manual/PTT trigger; confirm this is intentional
+      destination: APAT81-1     # AX.25 destination address/SSID — a software/device identifier, not a callsign
+      source: SAG-7             # AX.25 source callsign-SSID - set for half marathon
+      path: [WIDE1-1, WIDE2-1]  # digipeater path

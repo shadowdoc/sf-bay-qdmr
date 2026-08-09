@@ -1,0 +1,109 @@
+---
+# AT-D578UV II — mobile-only deltas.
+#
+# Physical layout (mobile radio, per qdmr manual ch04s04 "Keypad settings"):
+#   P1-P6       - six keys on the control-head face      -> funcKey1-funcKey6
+#   PF1 ("A")   - labeled "A" on the hand microphone      -> funcKeyA
+#   PF2 ("B")   - labeled "B" on the hand microphone      -> funcKeyB
+#   PF3 ("C")   - labeled "C" on the hand microphone      -> funcKeyC
+#   D           - labeled "D" on the hand microphone      -> funcKeyD (578-only)
+#   Knob        - the channel/frequency knob, push-button -> funcKnob (578-only)
+#   Up/Down     - mic up/down arrows, governed separately -> upDownKeys
+#
+# PF1-3 support Short/Long/VeryLong; P1-P6, D and the knob support Short/Long
+# only. `longPressDuration` sets the short->long threshold.
+#
+# CAVEAT: ZoneUp, ZoneDown, Menu and Exit (used below) do not appear in the
+# qdmr manual's documented key-function enum (ch04s04). They almost
+# certainly work as named (mic-driven zone stepping / control-head menu
+# nav) since they round-tripped from a real device read, but couldn't be
+# independently verified against qdmr's docs the way the other functions
+# could. Worth a quick bench-test after flashing.
+settings:
+  anytone:
+    keySettings:
+
+      # --- P1-P6 (control-head face keys) ---    
+      funcKey1Short: ToggleVFO           # P1 short: toggle VFO <-> memory/channel mode
+      funcKey1Long: Voltage              # P1 long:  show battery/supply voltage
+      funcKey2Short: Power               # P2 short: cycle TX power
+      funcKey2Long: ToggleMainChannel
+      funcKey3Short: SubChannel          # P3 short: step to previous zone (undocumented fn, see caveat)
+      funcKey3Long: Off
+      funcKey4Short: Off                 # P4 short: swap which VFO (A/B) is "main"/TX
+      funcKey4Long: Off                  # P4 long:  enable/disable sub-channel (dual-watch)
+      funcKey5Short: Off                 # P5 short: swap RX/TX frequencies
+      funcKey5Long: Off                  # P5 long:  toggle talk-around (bypass repeater)
+      funcKey6Short: Off                 # P6 short: step to next zone (undocumented fn, see caveat)
+      funcKey6Long: Off
+
+      # --- PF1 ("A"), hand mic ---
+      funcKeyAShort: Menu                # PF1 short: open control-head menu (undocumented fn, see caveat)
+      funcKeyALong: Off
+      funcKeyAVeryLong: Off
+
+      # --- PF2 ("B"), hand mic ---
+      funcKeyBShort: ZoneUp              # PF2 short: step to next zone (same fn as P6 above)
+      funcKeyBLong: Off
+      funcKeyBVeryLong: Off
+
+      # --- PF3 ("C"), hand mic ---
+      funcKeyCShort: ZoneDown            # PF3 short: step to previous zone (same fn as P3 above)
+      funcKeyCLong: Off
+
+      # --- D key, hand mic (578-only) ---
+      funcKeyDShort: Exit                # D short: back out of menu/dialog (undocumented fn, see caveat)
+      funcKeyDLong: Off
+
+      # --- Channel/frequency knob push (578-only) ---
+      funcKnobShort: Off
+      funcKnobLong: Off
+
+      # --- Global key-behavior settings ---
+      longPressDuration: 1 s   # hold time before a press counts as "Long"
+      upDownKeys: Channel      # mic up/down arrows step channels (vs. Volume)
+      autoKeyLock: false       # auto-lock keypad after inactivity
+      knobLock: false          # whether the knob locks when key-lock engages
+      keypadLock: false        # whether P1-P6 lock when key-lock engages
+      sideKeysLock: false      # whether PF1-PF3/D lock when key-lock engages
+      forcedKeyLock: false     # commercial-only "can't manually unlock" mode - leave false
+    autoRepeaterSettings:
+      directionA: Off
+      directionB: Off
+      vhfMin: 136 MHz
+      vhfMax: 174 MHz
+      uhfMin: 400 MHz
+      uhfMax: 480 MHz
+      vhf2Min: 136 MHz
+      vhf2Max: 174 MHz
+      uhf2Min: 400 MHz
+      uhf2Max: 480 MHz
+      offsets:
+        []
+positioning:
+  - aprs:
+      id: aprs1
+      name: APRS APAT81
+      revert: ch358
+      icon: Car
+      message: ""
+      anytone:
+        txDelay: 600 ms
+        preWaveDelay: 600 ms
+        passAll: false
+        reportPosition: true
+        reportMicE: true
+        reportObject: true
+        reportItem: true
+        reportMessage: true
+        reportWeather: false
+        reportNMEA: false
+        reportStatus: false
+        reportOther: false
+        frequencies:
+          []
+      period: 2 min
+      destination: APAT81-0
+      source: KR6A-1
+      path: [WIDE1-1, WIDE2-2]
+...
