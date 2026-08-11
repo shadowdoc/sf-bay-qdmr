@@ -19,7 +19,7 @@ default_device := env_var_or_default("DMRCONF_DEVICE", "")
 # verify-roundtrip, so the radio has time to apply the codeplug and reboot
 # before another comms session starts. Override with
 # DMRCONF_ROUNDTRIP_DELAY or a recipe arg.
-roundtrip_delay := env_var_or_default("DMRCONF_ROUNDTRIP_DELAY", "15")
+roundtrip_delay := env_var_or_default("DMRCONF_ROUNDTRIP_DELAY", "30")
 
 # Resolve a short radio alias to the full overlay/dmrconf identifier.
 # Falls through unchanged for anything not in the alias table.

@@ -140,7 +140,7 @@ settings:
       brightness: 10
       backlightDuration: infinite
       backlightDurationTX: 0
-      backlightDurationRX: infinite
+      backlightDurationRX: 239 s
       customChannelBackground: false
       volumeChangePrompt: true
       callEndPrompt: false
