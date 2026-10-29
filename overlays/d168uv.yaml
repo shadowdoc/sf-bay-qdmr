@@ -35,17 +35,25 @@ settings:
       funcKey6Long: Off
 
       # --- PF1 ("A"), first button below PTT ---  
-      funcKeyAShort: ToggleVFO             # PF1 short: cycle TX power (High/Mid/Low/...)
-      funcKeyALong: Power                    # PF1 long:  toggle VFO <-> memory/channel mode
+      # PF1 short: cycle TX power (High/Mid/Low/...)
+      # PF1 long:  toggle VFO <-> memory/channel mode
+      funcKeyAShort: ToggleVFO
+      funcKeyALong: Power
       funcKeyAVeryLong: Off
 
-      # --- PF2 ("B"), second button below PTT ---      
-      funcKeyBShort: ToggleMainChannel     # PF2 short: swap which VFO (A/B) is "main"/TX
-      funcKeyBLong: SubChannel             # PF2 long:  enable/disable sub-channel (dual-watch)
+      # --- PF2 ("B"), second button below PTT ---
+      # PF2 short: swap which VFO (A/B) is "main"/TX
+      # PF2 long:  enable/disable sub-channel (dual-watch)
+      funcKeyBShort: ToggleMainChannel
+      funcKeyBLong: SubChannel
       funcKeyBVeryLong: Off
 
       # --- Global key-behavior settings ---
-      longPressDuration: 1 s   # hold time before a press counts as "Long"
-      autoKeyLock: false       # auto-lock keypad after inactivity
-      sideKeysLock: false      # whether PF1/PF2 lock when key-lock engages
-      forcedKeyLock: false     # commercial-only "can't manually unlock" mode - leave false
+      # hold time before a press counts as "Long"
+      # auto-lock keypad after inactivity
+      # whether PF1/PF2 lock when key-lock engages
+      # commercial-only "can't manually unlock" mode - leave false
+      longPressDuration: 1 s
+      autoKeyLock: false
+      sideKeysLock: false
+      forcedKeyLock: false
