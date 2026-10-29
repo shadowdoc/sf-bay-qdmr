@@ -21,6 +21,13 @@ default_device := env_var_or_default("DMRCONF_DEVICE", "")
 # DMRCONF_ROUNDTRIP_DELAY or a recipe arg.
 roundtrip_delay := env_var_or_default("DMRCONF_ROUNDTRIP_DELAY", "30")
 
+# dmrconf binary used by every recipe. Prefers the locally built, patched
+# dmrconf (D168UV key-function fixes, qdmr#1018) over the Homebrew one,
+# which writes D168UV PF keys incorrectly. Override with DMRCONF; drop the
+# local build once a qdmr release includes the fix.
+local_dmrconf := home_directory() / "dev/qdmr-upstream/build/cli/dmrconf"
+dmrconf := env_var_or_default("DMRCONF", if path_exists(local_dmrconf) == "true" { local_dmrconf } else { "dmrconf" })
+
 # Resolve a short radio alias to the full overlay/dmrconf identifier.
 # Falls through unchanged for anything not in the alias table.
 _resolve name:
@@ -42,7 +49,7 @@ build radio:
     mkdir -p build
     yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' \
         base.yaml "overlays/${full}.yaml" > "build/${full}.yaml"
-    dmrconf verify --radio="${full}" "build/${full}.yaml"
+    "{{dmrconf}}" verify --radio="${full}" "build/${full}.yaml"
 
 # Build, verify, and write to the connected radio
 flash radio device=default_device:
@@ -51,7 +58,7 @@ flash radio device=default_device:
     full=$(just _resolve {{radio}})
     just build "${full}"
     dev=(); [ -n "{{device}}" ] && dev=(-D "{{device}}")
-    dmrconf write "${dev[@]}" "build/${full}.yaml"
+    "{{dmrconf}}" write "${dev[@]}" "build/${full}.yaml"
 
 # Read the codeplug back from the radio for round-trip comparison.
 # `--yaml` is passed explicitly regardless of the (now-correct) `.yaml`
@@ -64,7 +71,7 @@ readback radio device=default_device:
     full=$(just _resolve {{radio}})
     mkdir -p build
     dev=(); [ -n "{{device}}" ] && dev=(-D "{{device}}")
-    dmrconf read --yaml "${dev[@]}" "build/${full}-readback.yaml"
+    "{{dmrconf}}" read --yaml "${dev[@]}" "build/${full}-readback.yaml"
 
 # Flash, wait for the radio to apply the codeplug and reboot, read it back,
 # and semantically diff against what was written (requires dyff). The
@@ -88,7 +95,7 @@ detect device=default_device:
     #!/usr/bin/env bash
     set -euo pipefail
     dev=(); [ -n "{{device}}" ] && dev=(-D "{{device}}")
-    dmrconf detect "${dev[@]}"
+    "{{dmrconf}}" detect "${dev[@]}"
 
 # Remove all generated codeplugs
 clean:

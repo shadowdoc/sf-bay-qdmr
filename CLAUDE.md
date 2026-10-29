@@ -42,6 +42,14 @@ Prerequisites: `yq` (mikefarah, v4+), `just`, `qdmr`/`dmrconf`, optionally
 `dyff` for round-trip diffs. macOS: `brew install yq just dyff qdmr` — the
 `qdmr` Homebrew formula installs both the `qdmr` and `dmrconf` binaries.
 
+**Which dmrconf runs:** every recipe uses the justfile's `dmrconf`
+variable, which prefers a locally built, patched binary at
+`~/dev/qdmr-upstream/build/cli/dmrconf` (D168UV key-function fixes, see
+`EXPERIMENTS.md` / qdmr#1018) and falls back to `dmrconf` on `PATH` if it
+isn't there. Override with `DMRCONF=/path/to/dmrconf`; `just --evaluate
+dmrconf` shows the one in use. Remove the local build once a qdmr release
+includes the fix.
+
 There are no tests, lint, or CI in this repo — the only "test" is
 `dmrconf verify` (run automatically by `just build`) and, optionally,
 `just verify-roundtrip` against real hardware.
@@ -160,10 +168,13 @@ default into zone2 ("San Francisco"): VFO A → `ch13` (Sutro VHF), VFO B →
   in both `base.yaml` and `overlays/d168uv.yaml`) did not stick via
   `just flash`/`dmrconf write` — a round-trip read back showed `Off`.
   Setting the same function manually through the radio's front-panel menu
-  *did* stick and read back correctly. Root cause (write-path bug vs. a
-  one-off fluke from a flaky USB reconnect during that session) hasn't
-  been isolated — worth retrying a flash-only round-trip to see if it
-  reproduces.
+  *did* stick and read back correctly. **Root cause confirmed (2026-10-27)
+  as libdmrconf bugs** — `funcKeyBVeryLong` is written into PF2 long's
+  byte, long/very-long functions above `Zone` are encoded with the wrong
+  table, and short keys use the D878 table (wrong at least for Squelch).
+  Full evidence and radio memory map in `EXPERIMENTS.md` (qdmr#1018).
+  Fixed in the locally built dmrconf the justfile now uses (verified on
+  the radio, F2/F3); not yet in a qdmr release.
 - Relatedly: when manually reprogramming keys via the front panel to work
   around the issue above, it's easy to introduce an *unintended* extra
   binding while navigating the menu — one such session left PF1's
