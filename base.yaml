@@ -18,8 +18,10 @@ settings:
   audio:
     squelch: 3
     dmrSquelch: none
-    micGain: 1
-    fmMicGain: 5
+    # Mic gain is 1-10 here but the radios show 1-5: use 1/3/5/7/9 for
+    # radio levels 1-5 (even values round down). 5 = level 3.
+    micGain: 5        # digital
+    fmMicGain: none   # analog: none = same as micGain
     m17MicGain: none
     maxSpeakerVolume: 7
     maxHeadphoneVolume: 10

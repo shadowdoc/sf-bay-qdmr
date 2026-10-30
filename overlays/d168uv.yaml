@@ -11,10 +11,6 @@
 # base.yml — nothing to override.
 
 settings:
-  audio:
-    micGain: 10
-    fmMicGain: none
-    m17MicGain: none
   tone:
     keyTone: 1
   anytone:

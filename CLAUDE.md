@@ -198,6 +198,16 @@ default into zone2 ("San Francisco"): VFO A → `ch13` (Sutro VHF), VFO B →
   the codeplug at all. Always `readback` + `dyff` against
   `build/<radio>.yaml` after manual front-panel edits, before the next
   `flash` silently overwrites (or fails to overwrite) the drift.
+- qdmr maps 1-10 YAML levels to the radio's smaller ranges with
+  round-down integer math, and decode isn't the inverse of encode
+  (`Range::mapTo` in qdmr's `lib/codeplug.hh`). Mic gains (0-4 on the
+  radio, shown as 1-5) round-trip cleanly only on odd values 1/3/5/7/9 —
+  see the comment in `base.yaml`. `maxSpeakerVolume` (0-8) reads back one
+  lower for every value except 1 (e.g. 7 → 6), so roundtrip dyffs always
+  show it; the radio holds the written value. Never copy a readback's
+  volume back into the codeplug — it would drop a step each cycle. The
+  radio's "Auto" mic gain isn't representable in qdmr. Candidate upstream
+  fix (round-to-nearest), not yet filed.
 - `settings.gpsSettings.timeZone` is `UTC-07:00` (Pacific Daylight, correct
   as of mid-2026). AnyTone radios don't auto-adjust for DST, so this needs
   a manual flip to `UTC-08:00` around the fall/spring clock change to stay
