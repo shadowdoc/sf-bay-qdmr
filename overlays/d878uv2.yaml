@@ -8,13 +8,25 @@
 #   funcKey3-6, funcKeyD, funcKnob don't exist as physical buttons on this
 #   radio (funcKeyD and funcKnob are D578UV-mic/knob only) - always Off.
 #
-# Press lengths: Short / Long on P1,P2,PF1-3. PF1-3 also support VeryLong.
-# `longPressDuration` sets the short->long threshold; there's no separate
-# very-long threshold field (firmware default applies).
+# Press lengths: Short / Long on P1,P2,PF1-3. qdmr's 878 codeplug has no
+# VeryLong support - funcKey*VeryLong is never written or read, so it's
+# omitted here. `longPressDuration` sets the short->long threshold.
 
 settings:
   anytone:
     keySettings:
+      # --- Unused on this radio ---
+      # Not encoded for the 878; these are qdmr's readback defaults,
+      # included to make roundtrip dyff more accurate
+      funcKey3Short: Power
+      funcKey3Long: Record
+      funcKey4Short: Repeater
+      funcKey4Long: SMS
+      funcKey5Short: Reverse
+      funcKey5Long: Dial
+      funcKey6Short: Encryption
+      funcKey6Long: Off
+
       # --- P1 / P2 (below display) ---
       funcKey1Short: ChannelType     # P1 short: cycle channel type (FM/DMR/Mixed)
       funcKey1Long: Scan             # P1 long:  start/stop scan on current channel
@@ -24,12 +36,10 @@ settings:
       # --- PF1 ("A"), first button below PTT ---
       funcKeyAShort: ToggleVFO      # PF1 short: toggle VFO <-> memory/channel mode
       funcKeyALong: Power           # PF1 long:  cycle TX power (High/Mid/Low/...)
-      funcKeyAVeryLong: ChannelType # PF1 very long: cycle channel type (FM/DMR/Mixed)
 
       # --- PF2 ("B"), second button below PTT ---
       funcKeyBShort: ToggleMainChannel  # PF2 short: swap which VFO (A/B) is "main" (the one PTT transmits on)
       funcKeyBLong: SubChannel          # PF2 long:  enable/disable the sub-channel (dual-watch)
-      funcKeyBVeryLong: Scan            # PF2 very long: start/stop scan on current channel
 
       # --- PF3 ("C"), the orange key on top ---
       funcKeyCShort: Record
