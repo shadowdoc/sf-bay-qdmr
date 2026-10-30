@@ -163,14 +163,14 @@ default into zone2 ("San Francisco"): VFO A → `ch13` (Sutro VHF), VFO B →
   consumed by the build), mirroring `d578uv2.yaml`'s keySettings with fuller
   prose commentary. Keep it in sync if the overlay changes, or remove it
   now that the overlay itself carries inline comments.
-- A `just verify-roundtrip 878` on real hardware showed the radio reverting
-  `channels.*.anytone.throughMode` from `true` (written) to `false` on 7
-  channels. qdmr's own docs for this field just say "if true, the through
-  mode is enabled. Whatever that means." — behavior is undocumented even
-  upstream, so it's unclear whether this reversion is meaningful. Low
-  priority unless a bench test (flash a channel with it explicitly set,
-  key up against a repeater/hotspot, listen for a difference) turns up an
-  audible effect.
+- `just verify-roundtrip 878` shows `channels.*.anytone.throughMode`
+  going from `true` (written) to `false` on 7 DMR channels. This is **not
+  the radio**: a purely local `dmrconf encode` → `decode` of
+  `build/d878uv2.yaml` (no hardware) shows the same flip, so qdmr's 878
+  codec drops the value (either never encodes it or decodes it wrong — not
+  yet traced). qdmr's own docs for the field just say "if true, the
+  through mode is enabled. Whatever that means." Low priority unless a
+  bench test turns up an audible effect.
 - The radio's USB serial port frequently takes **longer than the default
   8s `roundtrip_delay`** to reboot and re-enumerate after a write —
   confirmed on all three radio models. `readback` (inside
