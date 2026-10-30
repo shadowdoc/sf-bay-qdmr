@@ -30,19 +30,21 @@ settings:
       funcKey6Short: Encryption
       funcKey6Long: Off
 
-      # --- PF1 ("A"), first button below PTT ---  
-      # PF1 short: cycle TX power (High/Mid/Low/...)
-      # PF1 long:  toggle VFO <-> memory/channel mode
+      # --- PF1 ("A"), first button below PTT ---
+      # PF1 short: toggle VFO <-> memory/channel mode
+      # PF1 long:  cycle TX power (High/Low)
+      # PF1 very long: cycle channel type (FM/DMR/Mixed)
       funcKeyAShort: ToggleVFO
       funcKeyALong: Power
-      funcKeyAVeryLong: Off
+      funcKeyAVeryLong: ChannelType
 
       # --- PF2 ("B"), second button below PTT ---
       # PF2 short: swap which VFO (A/B) is "main"/TX
       # PF2 long:  enable/disable sub-channel (dual-watch)
+      # PF2 very long: start/stop scan on current channel
       funcKeyBShort: ToggleMainChannel
       funcKeyBLong: SubChannel
-      funcKeyBVeryLong: Off
+      funcKeyBVeryLong: Scan
 
       # --- Global key-behavior settings ---
       # hold time before a press counts as "Long"
