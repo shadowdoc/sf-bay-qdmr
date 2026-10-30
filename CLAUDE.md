@@ -220,6 +220,14 @@ default into zone2 ("San Francisco"): VFO A → `ch13` (Sutro VHF), VFO B →
   volume back into the codeplug — it would drop a step each cycle. The
   radio's "Auto" mic gain isn't representable in qdmr. Candidate upstream
   fix (round-to-nearest), not yet filed.
+- `settings.tone.keyTone: off` always reads back as `1` on the 878 (and
+  likely the other AnyTones). The radio stores key tone as an on/off flag
+  plus a level byte; `off` (same as `0`) writes flag off + level 0, but
+  qdmr's decode ignores the flag and maps level 0 to `1`. `1` (flag on,
+  level 0) reads back identically, so the readback can't tell them apart —
+  check by pressing a key. Don't set `1` just to quiet the dyff: it turns
+  key beeps on. Currently `off` in `base.yaml`; the 168 overlay sets `1`
+  (beeps on).
 - `settings.gpsSettings.timeZone` is `UTC-07:00` (Pacific Daylight, correct
   as of mid-2026). AnyTone radios don't auto-adjust for DST, so this needs
   a manual flip to `UTC-08:00` around the fall/spring clock change to stay
