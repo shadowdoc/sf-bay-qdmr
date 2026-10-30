@@ -47,8 +47,16 @@ build radio:
     set -euo pipefail
     full=$(just _resolve {{radio}})
     mkdir -p build
+    # Per-radio fixups for list items an overlay can't patch (yq `*`
+    # replaces lists wholesale). The D168UV only has Low/High power, so
+    # base.yaml's `Max` channels become `High` rather than letting dmrconf
+    # pick a value.
+    fixup='.'
+    case "${full}" in
+        d168uv) fixup='(.channels[][] | select(.power == "Max")).power = "High"' ;;
+    esac
     yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' \
-        base.yaml "overlays/${full}.yaml" > "build/${full}.yaml"
+        base.yaml "overlays/${full}.yaml" | yq "${fixup}" > "build/${full}.yaml"
     "{{dmrconf}}" verify --radio="${full}" "build/${full}.yaml"
 
 # Build, verify, and write to the connected radio

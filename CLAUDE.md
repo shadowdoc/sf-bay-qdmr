@@ -85,6 +85,10 @@ There are no tests, lint, or CI in this repo — the only "test" is
   would otherwise silently wipe out `base.yaml`'s entry for that radio's
   build. Keep these in sync with `base.yaml` by hand unless a radio should
   deliberately beacon differently.
+- Simple per-radio rewrites of list items go in the `fixup` yq expression
+  in the justfile's `build` recipe (applied after the merge). Currently
+  only the D168UV uses it: its channels have no `Max` power, so `Max` is
+  rewritten to `High` for that build.
 - The first time a per-radio **channel** difference is needed, the merge
   step will need to switch to an id-aware YAML merger — naive `yq *` will
   not do the right thing for a partial channel list.
