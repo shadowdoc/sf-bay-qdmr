@@ -3,6 +3,7 @@ version: 0.15.1
 settings:
   power: High
   defaultID: id1
+  tot: 3 min   # transmit timeout (180 s); unset reads back as 2010 s
   boot:
     display: Text
     message1: RETURN TO
