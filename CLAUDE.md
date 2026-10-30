@@ -111,7 +111,11 @@ matching scan list and give it `scanListRef` too.
 qdmr/AnyTone function names. The canonical function enum and field
 semantics are documented at qdmr manual
 [ch04s04](https://static.dm3mat.de/qdmr/manual/ch04s04.html) ("Settings
-extension" → "Keypad settings"). Physical layout differs by radio:
+extension" → "Keypad settings"). The manual's list is incomplete — the authoritative enum is
+`AnytoneKeySettingsExtension::KeyFunction` in
+`~/dev/qdmr-upstream/lib/anytone_settingsextension.hh` (e.g. `ZoneUp`,
+`ZoneDown`, `Menu`, `Exit`, used on the 578, are valid there but missing
+from ch04s04). Physical layout differs by radio:
 
 - **D168UV** (HT): only PF1/PF2 exist (`funcKeyA`/`funcKeyB`). Everything
   else is omitted from the overlay and inherits `Off` from `base.yaml`.
@@ -147,10 +151,6 @@ default into zone2 ("San Francisco"): VFO A → `ch13` (Sutro VHF), VFO B →
   block already uses `KR6A-1` instead — the 878's copy (and `base.yaml`)
   still need a deliberate `KR6A-N` SSID before either radio transmits real
   APRS beacons.
-- `d578uv2.yaml` uses key functions `ZoneUp`, `ZoneDown`, `Menu`, `Exit`
-  that don't appear in qdmr's documented function enum (ch04s04). They came
-  from a real device read-back, so are presumably valid, but haven't been
-  independently confirmed — worth a bench test.
 - Zone up/down is bound redundantly on the 578 across four buttons (P3, P6,
   PF2, PF3) — confirm this is intentional rather than leftover iteration.
 - `test.yaml` and `files.zip` at the repo root are unexplained / possibly
@@ -198,6 +198,18 @@ default into zone2 ("San Francisco"): VFO A → `ch13` (Sutro VHF), VFO B →
   the codeplug at all. Always `readback` + `dyff` against
   `build/<radio>.yaml` after manual front-panel edits, before the next
   `flash` silently overwrites (or fails to overwrite) the drift.
+- The D168UV build emits 98 `Property 'groupList' must refer to an
+  instances of RXGroupList` warnings — one per DMR channel, since none has
+  an RX group list. **Harmless:** qdmr's `d168uv_limits.cc` declares
+  `groupList` as non-nullable (`RadioLimitObjRef(RXGroupList::staticMetaObject,
+  false)`), while `d878uv2_limits.cc` allows null (`true`); the D168UV
+  inherits the shared AnyTone channel encoder, which writes a null list as
+  `0xff` ("None"), and real 168 readbacks (`2026-08-10-d168.yaml`,
+  `build/d168uv-readback.yaml`) show all DMR channels with no group list,
+  so the radio accepts it. Don't "fix" it by assigning `grp1` — it holds
+  only the `cont1` placeholder (TG 1) and would add TG 1 to every
+  channel's receive list. Planned fix: flip that `false` to `true` upstream,
+  deferred until qdmr#1018 is merged.
 - qdmr maps 1-10 YAML levels to the radio's smaller ranges with
   round-down integer math, and decode isn't the inverse of encode
   (`Range::mapTo` in qdmr's `lib/codeplug.hh`). Mic gains (0-4 on the
