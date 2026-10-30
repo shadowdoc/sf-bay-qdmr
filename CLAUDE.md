@@ -89,6 +89,18 @@ There are no tests, lint, or CI in this repo — the only "test" is
   step will need to switch to an id-aware YAML merger — naive `yq *` will
   not do the right thing for a partial channel list.
 
+### Zones and scan lists
+
+Each zone (except APRS) has a matching scan list with the same channels,
+and every zoned channel points at its zone's list via `scanListRef:` (the
+YAML key is `scanListRef`, not `scanList` — an unknown key is silently
+ignored). AnyTone scan lists cap at **50 channels** and `dmrconf verify`
+does *not* check this, so large areas are split into multiple zones
+(Santa Clara 1/2/Dig). Deliberate mismatches: Contra Costa's scan list
+omits the `ch120` divider, and Alameda's (52-channel zone) omits `ch180`/
+`ch181` to stay at 50. When adding a channel to a zone, add it to the
+matching scan list and give it `scanListRef` too.
+
 ### AnyTone key-function model
 
 `settings.anytone.keySettings` in each overlay maps physical buttons to

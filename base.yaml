@@ -544,6 +544,7 @@ channels:
   - fm:
       id: ch1
       name: Simplex-146.400
+      scanListRef: scan13
       rxFrequency: 146.4 MHz
       txFrequency: 146.4 MHz
       timeout: !default ""
@@ -570,6 +571,7 @@ channels:
   - fm:
       id: ch2
       name: Simplex-146.52
+      scanListRef: scan13
       rxFrequency: 146.52 MHz
       txFrequency: 146.52 MHz
       timeout: !default ""
@@ -596,6 +598,7 @@ channels:
   - fm:
       id: ch3
       name: Simplex-146.55
+      scanListRef: scan13
       rxFrequency: 146.55 MHz
       txFrequency: 146.55 MHz
       timeout: !default ""
@@ -622,6 +625,7 @@ channels:
   - fm:
       id: ch4
       name: Simplex-146.58
+      scanListRef: scan13
       rxFrequency: 146.58 MHz
       txFrequency: 146.58 MHz
       timeout: !default ""
@@ -648,6 +652,7 @@ channels:
   - fm:
       id: ch5
       name: Simplex-432.10
+      scanListRef: scan13
       rxFrequency: 432.1 MHz
       txFrequency: 432.1 MHz
       timeout: !default ""
@@ -674,6 +679,7 @@ channels:
   - dmr:
       id: ch6
       name: DMR SPX 145.790
+      scanListRef: scan13
       rxFrequency: 145.79 MHz
       txFrequency: 145.79 MHz
       timeout: !default ""
@@ -704,6 +710,7 @@ channels:
   - dmr:
       id: ch7
       name: DMR SPX 145.510
+      scanListRef: scan13
       rxFrequency: 145.51 MHz
       txFrequency: 145.51 MHz
       timeout: !default ""
@@ -734,6 +741,7 @@ channels:
   - dmr:
       id: ch8
       name: DMR SPX 441.000
+      scanListRef: scan13
       rxFrequency: 441 MHz
       txFrequency: 441 MHz
       timeout: !default ""
@@ -764,6 +772,7 @@ channels:
   - dmr:
       id: ch9
       name: DMR SPX 446.500
+      scanListRef: scan13
       rxFrequency: 446.5 MHz
       txFrequency: 446.5 MHz
       timeout: !default ""
@@ -794,6 +803,7 @@ channels:
   - dmr:
       id: ch10
       name: DMR SPX 446.075
+      scanListRef: scan13
       rxFrequency: 446.075 MHz
       txFrequency: 446.075 MHz
       timeout: !default ""
@@ -824,6 +834,7 @@ channels:
   - dmr:
       id: ch11
       name: DMR SPX 433.450
+      scanListRef: scan13
       rxFrequency: 433.45 MHz
       txFrequency: 433.45 MHz
       timeout: !default ""
@@ -880,6 +891,7 @@ channels:
   - fm:
       id: ch13
       name: Sutro VHF
+      scanListRef: scan1
       rxFrequency: 145.15 MHz
       txFrequency: 144.55 MHz
       timeout: !default ""
@@ -909,6 +921,7 @@ channels:
   - dmr:
       id: ch14
       name: Sutro DMR W6PW
+      scanListRef: scan1
       rxFrequency: 444.225 MHz
       txFrequency: 449.225 MHz
       timeout: !default ""
@@ -939,6 +952,7 @@ channels:
   - dmr:
       id: ch15
       name: Sutro DMR TG9
+      scanListRef: scan1
       rxFrequency: 444.225 MHz
       txFrequency: 449.225 MHz
       timeout: !default ""
@@ -969,6 +983,7 @@ channels:
   - dmr:
       id: ch16
       name: Sutro DMR NORCAL
+      scanListRef: scan1
       rxFrequency: 444.225 MHz
       txFrequency: 449.225 MHz
       timeout: !default ""
@@ -999,6 +1014,7 @@ channels:
   - fm:
       id: ch17
       name: K6KYA
+      scanListRef: scan1
       rxFrequency: 444.85 MHz
       txFrequency: 449.85 MHz
       timeout: !default ""
@@ -1026,6 +1042,7 @@ channels:
   - fm:
       id: ch18
       name: N6CDF
+      scanListRef: scan1
       rxFrequency: 444.925 MHz
       txFrequency: 449.925 MHz
       timeout: !default ""
@@ -1053,6 +1070,7 @@ channels:
   - fm:
       id: ch19
       name: N6MVT
+      scanListRef: scan1
       rxFrequency: 442.075 MHz
       txFrequency: 447.075 MHz
       timeout: !default ""
@@ -1080,6 +1098,7 @@ channels:
   - fm:
       id: ch20
       name: NO1PC
+      scanListRef: scan1
       rxFrequency: 441.025 MHz
       txFrequency: 446.025 MHz
       timeout: !default ""
@@ -1108,6 +1127,7 @@ channels:
   - fm:
       id: ch21
       name: W6EE
+      scanListRef: scan1
       rxFrequency: 441.45 MHz
       txFrequency: 446.45 MHz
       timeout: !default ""
@@ -1135,6 +1155,7 @@ channels:
   - fm:
       id: ch22
       name: W6TP
+      scanListRef: scan1
       rxFrequency: 146.79 MHz
       txFrequency: 146.19 MHz
       timeout: !default ""
@@ -1162,6 +1183,7 @@ channels:
   - fm:
       id: ch23
       name: W6TP
+      scanListRef: scan1
       rxFrequency: 443.1 MHz
       txFrequency: 448.1 MHz
       timeout: !default ""
@@ -1189,6 +1211,7 @@ channels:
   - fm:
       id: ch24
       name: WA6GG
+      scanListRef: scan1
       rxFrequency: 442.05 MHz
       txFrequency: 447.05 MHz
       timeout: !default ""
@@ -1246,6 +1269,7 @@ channels:
   - fm:
       id: ch26
       name: Tam Linked
+      scanListRef: scan2
       rxFrequency: 146.7 MHz
       txFrequency: 146.1 MHz
       timeout: !default ""
@@ -1273,6 +1297,7 @@ channels:
   - fm:
       id: ch27
       name: Tam West Link
+      scanListRef: scan2
       rxFrequency: 146.7 MHz
       txFrequency: 146.1 MHz
       timeout: !default ""
@@ -1300,6 +1325,7 @@ channels:
   - fm:
       id: ch28
       name: Bahia Ridge Lnk
+      scanListRef: scan2
       rxFrequency: 146.7 MHz
       txFrequency: 146.1 MHz
       timeout: !default ""
@@ -1327,6 +1353,7 @@ channels:
   - fm:
       id: ch29
       name: Barbabe - Linked
+      scanListRef: scan2
       rxFrequency: 146.7 MHz
       txFrequency: 146.1 MHz
       timeout: !default ""
@@ -1354,6 +1381,7 @@ channels:
   - fm:
       id: ch30
       name: Tam West - SA
+      scanListRef: scan2
       rxFrequency: 147.33 MHz
       txFrequency: 147.93 MHz
       timeout: !default ""
@@ -1381,6 +1409,7 @@ channels:
   - fm:
       id: ch31
       name: Tam - UHF
+      scanListRef: scan2
       rxFrequency: 443.25 MHz
       txFrequency: 448.25 MHz
       timeout: !default ""
@@ -1408,6 +1437,7 @@ channels:
   - fm:
       id: ch32
       name: Big Rock - UHF
+      scanListRef: scan2
       rxFrequency: 447.175 MHz
       txFrequency: 442.175 MHz
       timeout: !default ""
@@ -1435,6 +1465,7 @@ channels:
   - fm:
       id: ch33
       name: Dollar Ridge-UHF
+      scanListRef: scan2
       rxFrequency: 440.925 MHz
       txFrequency: 445.925 MHz
       timeout: !default ""
@@ -1462,6 +1493,7 @@ channels:
   - fm:
       id: ch34
       name: Mt Barbabe - UHF
+      scanListRef: scan2
       rxFrequency: 444.125 MHz
       txFrequency: 449.125 MHz
       timeout: !default ""
@@ -1489,6 +1521,7 @@ channels:
   - fm:
       id: ch35
       name: Tiburon - UHF
+      scanListRef: scan2
       rxFrequency: 442.125 MHz
       txFrequency: 447.125 MHz
       timeout: !default ""
@@ -1546,6 +1579,7 @@ channels:
   - dmr:
       id: ch37
       name: WlfBck K6ER TG9
+      scanListRef: scan2
       rxFrequency: 442.525 MHz
       txFrequency: 447.525 MHz
       timeout: !default ""
@@ -1576,6 +1610,7 @@ channels:
   - dmr:
       id: ch38
       name: WlfBck K6ER NCAL
+      scanListRef: scan2
       rxFrequency: 442.525 MHz
       txFrequency: 447.525 MHz
       timeout: !default ""
@@ -1636,6 +1671,7 @@ channels:
   - fm:
       id: ch40
       name: Bodega Bay WA6M
+      scanListRef: scan3
       rxFrequency: 146.67 MHz
       txFrequency: 146.07 MHz
       timeout: !default ""
@@ -1663,6 +1699,7 @@ channels:
   - fm:
       id: ch41
       name: Cazadero K6CHG
+      scanListRef: scan3
       rxFrequency: 444 MHz
       txFrequency: 449 MHz
       timeout: !default ""
@@ -1689,6 +1726,7 @@ channels:
   - fm:
       id: ch42
       name: Cazadero K6ACS
+      scanListRef: scan3
       rxFrequency: 147.975 MHz
       txFrequency: 147.375 MHz
       timeout: !default ""
@@ -1716,6 +1754,7 @@ channels:
   - fm:
       id: ch43
       name: Cloverdale WB6QA
+      scanListRef: scan3
       rxFrequency: 449.7 MHz
       txFrequency: 444.7 MHz
       timeout: !default ""
@@ -1743,6 +1782,7 @@ channels:
   - fm:
       id: ch44
       name: Guerneville K6CD
+      scanListRef: scan3
       rxFrequency: 145.19 MHz
       txFrequency: 144.59 MHz
       timeout: !default ""
@@ -1770,6 +1810,7 @@ channels:
   - fm:
       id: ch45
       name: Petaluma WB6TMS
+      scanListRef: scan3
       rxFrequency: 146.91 MHz
       txFrequency: 146.31 MHz
       timeout: !default ""
@@ -1798,6 +1839,7 @@ channels:
   - fm:
       id: ch46
       name: Rohnert Park KB6
+      scanListRef: scan3
       rxFrequency: 444.625 MHz
       txFrequency: 449.625 MHz
       timeout: !default ""
@@ -1826,6 +1868,7 @@ channels:
   - fm:
       id: ch47
       name: Snta Rosa WA6YGD
+      scanListRef: scan3
       rxFrequency: 145.35 MHz
       txFrequency: 144.75 MHz
       timeout: !default ""
@@ -1853,6 +1896,7 @@ channels:
   - fm:
       id: ch48
       name: Snta Rosa K6ACS
+      scanListRef: scan3
       rxFrequency: 146.73 MHz
       txFrequency: 146.13 MHz
       timeout: !default ""
@@ -1880,6 +1924,7 @@ channels:
   - fm:
       id: ch49
       name: Snta Rosa KE6EA
+      scanListRef: scan3
       rxFrequency: 146.835 MHz
       txFrequency: 146.235 MHz
       timeout: !default ""
@@ -1907,6 +1952,7 @@ channels:
   - fm:
       id: ch50
       name: Snta Rosa K6JSI
+      scanListRef: scan3
       rxFrequency: 441.65 MHz
       txFrequency: 446.65 MHz
       timeout: !default ""
@@ -1934,6 +1980,7 @@ channels:
   - fm:
       id: ch51
       name: Snta Rosa KD6RC
+      scanListRef: scan3
       rxFrequency: 444.375 MHz
       txFrequency: 449.375 MHz
       timeout: !default ""
@@ -1962,6 +2009,7 @@ channels:
   - fm:
       id: ch52
       name: Snta Rosa KF6SZ
+      scanListRef: scan3
       rxFrequency: 444.9 MHz
       txFrequency: 449.9 MHz
       timeout: !default ""
@@ -1989,6 +2037,7 @@ channels:
   - fm:
       id: ch53
       name: Snta Rosa WB7AB
+      scanListRef: scan3
       rxFrequency: 443.825 MHz
       txFrequency: 448.825 MHz
       timeout: !default ""
@@ -2016,6 +2065,7 @@ channels:
   - fm:
       id: ch54
       name: Snta Rosa KD6RC
+      scanListRef: scan3
       rxFrequency: 441.3 MHz
       txFrequency: 446.3 MHz
       timeout: !default ""
@@ -2043,6 +2093,7 @@ channels:
   - fm:
       id: ch55
       name: Snta Rosa K6CSR
+      scanListRef: scan3
       rxFrequency: 146.79 MHz
       txFrequency: 146.19 MHz
       timeout: !default ""
@@ -2071,6 +2122,7 @@ channels:
   - fm:
       id: ch56
       name: Napa W6CO
+      scanListRef: scan3
       rxFrequency: 441.9 MHz
       txFrequency: 446.9 MHz
       timeout: !default ""
@@ -2098,6 +2150,7 @@ channels:
   - fm:
       id: ch57
       name: Napa W6CO
+      scanListRef: scan3
       rxFrequency: 147.18 MHz
       txFrequency: 147.78 MHz
       timeout: !default ""
@@ -2125,6 +2178,7 @@ channels:
   - fm:
       id: ch58
       name: Sebastopol W6SON
+      scanListRef: scan3
       rxFrequency: 147.315 MHz
       txFrequency: 147.915 MHz
       timeout: !default ""
@@ -2152,6 +2206,7 @@ channels:
   - fm:
       id: ch59
       name: Sebastopol W6SON
+      scanListRef: scan3
       rxFrequency: 441.375 MHz
       txFrequency: 446.375 MHz
       timeout: !default ""
@@ -2179,6 +2234,7 @@ channels:
   - fm:
       id: ch60
       name: Sebastopol WA6FU
+      scanListRef: scan3
       rxFrequency: 441.1 MHz
       txFrequency: 446.1 MHz
       timeout: !default ""
@@ -2206,6 +2262,7 @@ channels:
   - fm:
       id: ch61
       name: Sebastopol KJ6FP
+      scanListRef: scan3
       rxFrequency: 441.95 MHz
       txFrequency: 446.95 MHz
       timeout: !default ""
@@ -2233,6 +2290,7 @@ channels:
   - fm:
       id: ch62
       name: Sea Ranch W6ABR
+      scanListRef: scan3
       rxFrequency: 147.945 MHz
       txFrequency: 147.345 MHz
       timeout: !default ""
@@ -2260,6 +2318,7 @@ channels:
   - fm:
       id: ch63
       name: Windsor W6IBC
+      scanListRef: scan3
       rxFrequency: 146.985 MHz
       txFrequency: 146.385 MHz
       timeout: !default ""
@@ -2317,6 +2376,7 @@ channels:
   - dmr:
       id: ch65
       name: Bdga KJ6QBM Ncal
+      scanListRef: scan3
       rxFrequency: 440.325 MHz
       txFrequency: 445.325 MHz
       timeout: !default ""
@@ -2347,6 +2407,7 @@ channels:
   - dmr:
       id: ch66
       name: Bdga KJ6QBM ANAR
+      scanListRef: scan3
       rxFrequency: 440.325 MHz
       txFrequency: 445.325 MHz
       timeout: !default ""
@@ -2377,6 +2438,7 @@ channels:
   - dmr:
       id: ch67
       name: St R K6ACS Ncal
+      scanListRef: scan3
       rxFrequency: 442.1125 MHz
       txFrequency: 447.1125 MHz
       timeout: !default ""
@@ -2407,6 +2469,7 @@ channels:
   - dmr:
       id: ch68
       name: St Rsa K6ACS ANA
+      scanListRef: scan3
       rxFrequency: 442.1125 MHz
       txFrequency: 447.1125 MHz
       timeout: !default ""
@@ -2437,6 +2500,7 @@ channels:
   - dmr:
       id: ch69
       name: Sebst KC6SO LCL
+      scanListRef: scan3
       rxFrequency: 444.9875 MHz
       txFrequency: 449.9875 MHz
       timeout: !default ""
@@ -2467,6 +2531,7 @@ channels:
   - dmr:
       id: ch70
       name: Sebst W6SON Ncal
+      scanListRef: scan3
       rxFrequency: 443.1 MHz
       txFrequency: 448.1 MHz
       timeout: !default ""
@@ -2497,6 +2562,7 @@ channels:
   - dmr:
       id: ch71
       name: Sebst W6SON SnmC
+      scanListRef: scan3
       rxFrequency: 443.1 MHz
       txFrequency: 448.1 MHz
       timeout: !default ""
@@ -2557,6 +2623,7 @@ channels:
   - fm:
       id: ch73
       name: Napa WA7G
+      scanListRef: scan4
       rxFrequency: 441.675 MHz
       txFrequency: 446.675 MHz
       timeout: !default ""
@@ -2584,6 +2651,7 @@ channels:
   - fm:
       id: ch74
       name: Napa W6BYS
+      scanListRef: scan4
       rxFrequency: 146.82 MHz
       txFrequency: 146.22 MHz
       timeout: !default ""
@@ -2611,6 +2679,7 @@ channels:
   - fm:
       id: ch75
       name: Napa N6TKW
+      scanListRef: scan4
       rxFrequency: 442.25 MHz
       txFrequency: 447.25 MHz
       timeout: !default ""
@@ -2638,6 +2707,7 @@ channels:
   - fm:
       id: ch76
       name: Napa K6ZRX
+      scanListRef: scan4
       rxFrequency: 444.525 MHz
       txFrequency: 449.525 MHz
       timeout: !default ""
@@ -2666,6 +2736,7 @@ channels:
   - fm:
       id: ch77
       name: Napa N6TKW
+      scanListRef: scan4
       rxFrequency: 146.115 MHz
       txFrequency: 146.715 MHz
       timeout: !default ""
@@ -2693,6 +2764,7 @@ channels:
   - fm:
       id: ch78
       name: Vacaville W6VVR
+      scanListRef: scan4
       rxFrequency: 145.47 MHz
       txFrequency: 144.87 MHz
       timeout: !default ""
@@ -2721,6 +2793,7 @@ channels:
   - fm:
       id: ch79
       name: Vacaville W6AW
+      scanListRef: scan4
       rxFrequency: 147.27 MHz
       txFrequency: 147.87 MHz
       timeout: !default ""
@@ -2749,6 +2822,7 @@ channels:
   - fm:
       id: ch80
       name: Vacaville K6LNK
+      scanListRef: scan4
       rxFrequency: 440.75 MHz
       txFrequency: 445.75 MHz
       timeout: !default ""
@@ -2776,6 +2850,7 @@ channels:
   - fm:
       id: ch81
       name: Yountville N6TKW
+      scanListRef: scan4
       rxFrequency: 444.725 MHz
       txFrequency: 449.725 MHz
       timeout: !default ""
@@ -2804,6 +2879,7 @@ channels:
   - fm:
       id: ch82
       name: Yountville W6BYS
+      scanListRef: scan4
       rxFrequency: 440.05 MHz
       txFrequency: 445.05 MHz
       timeout: !default ""
@@ -2832,6 +2908,7 @@ channels:
   - fm:
       id: ch83
       name: Woodland KE6YUV
+      scanListRef: scan4
       rxFrequency: 146.97 MHz
       txFrequency: 146.37 MHz
       timeout: !default ""
@@ -2890,6 +2967,7 @@ channels:
   - dmr:
       id: ch85
       name: Angwin K6LO LCL
+      scanListRef: scan4
       rxFrequency: 440.075 MHz
       txFrequency: 445.075 MHz
       timeout: !default ""
@@ -2920,6 +2998,7 @@ channels:
   - dmr:
       id: ch86
       name: Angwin K6LO BayN
+      scanListRef: scan4
       rxFrequency: 440.075 MHz
       txFrequency: 445.075 MHz
       timeout: !default ""
@@ -2950,6 +3029,7 @@ channels:
   - dmr:
       id: ch87
       name: Angwin K6LO SnmC
+      scanListRef: scan4
       rxFrequency: 440.075 MHz
       txFrequency: 445.075 MHz
       timeout: !default ""
@@ -2980,6 +3060,7 @@ channels:
   - dmr:
       id: ch88
       name: StHlna K6LO SnmC
+      scanListRef: scan4
       rxFrequency: 444.175 MHz
       txFrequency: 449.175 MHz
       timeout: !default ""
@@ -3040,6 +3121,7 @@ channels:
   - fm:
       id: ch90
       name: Benicia KR6BEN
+      scanListRef: scan5
       rxFrequency: 441.25 MHz
       txFrequency: 446.25 MHz
       timeout: !default ""
@@ -3067,6 +3149,7 @@ channels:
   - fm:
       id: ch91
       name: Benicia KR6BEN
+      scanListRef: scan5
       rxFrequency: 442.75 MHz
       txFrequency: 447.75 MHz
       timeout: !default ""
@@ -3094,6 +3177,7 @@ channels:
   - fm:
       id: ch92
       name: Fairfield K6SOL
+      scanListRef: scan5
       rxFrequency: 441.15 MHz
       txFrequency: 446.15 MHz
       timeout: !default ""
@@ -3121,6 +3205,7 @@ channels:
   - fm:
       id: ch93
       name: Fairfield KC6UJM
+      scanListRef: scan5
       rxFrequency: 442.775 MHz
       txFrequency: 447.775 MHz
       timeout: !default ""
@@ -3148,6 +3233,7 @@ channels:
   - fm:
       id: ch94
       name: Vacaville K6MVR
+      scanListRef: scan5
       rxFrequency: 147 MHz
       txFrequency: 146.4 MHz
       timeout: !default ""
@@ -3176,6 +3262,7 @@ channels:
   - fm:
       id: ch95
       name: Vacaville N6CDF
+      scanListRef: scan5
       rxFrequency: 440.525 MHz
       txFrequency: 445.525 MHz
       timeout: !default ""
@@ -3203,6 +3290,7 @@ channels:
   - fm:
       id: ch96
       name: Vacaville N6ICW
+      scanListRef: scan5
       rxFrequency: 147.195 MHz
       txFrequency: 147.795 MHz
       timeout: !default ""
@@ -3230,6 +3318,7 @@ channels:
   - fm:
       id: ch97
       name: Vacaville W6KCS
+      scanListRef: scan5
       rxFrequency: 442.025 MHz
       txFrequency: 447.025 MHz
       timeout: !default ""
@@ -3257,6 +3346,7 @@ channels:
   - fm:
       id: ch98
       name: Vacaville W6YDD
+      scanListRef: scan5
       rxFrequency: 146.625 MHz
       txFrequency: 146.025 MHz
       timeout: !default ""
@@ -3284,6 +3374,7 @@ channels:
   - fm:
       id: ch99
       name: Vacaville WV6F
+      scanListRef: scan5
       rxFrequency: 440.025 MHz
       txFrequency: 445.025 MHz
       timeout: !default ""
@@ -3312,6 +3403,7 @@ channels:
   - fm:
       id: ch100
       name: Vallejo K6LI
+      scanListRef: scan5
       rxFrequency: 145.31 MHz
       txFrequency: 144.71 MHz
       timeout: !default ""
@@ -3340,6 +3432,7 @@ channels:
   - fm:
       id: ch101
       name: Vallejo K6LI
+      scanListRef: scan5
       rxFrequency: 442.425 MHz
       txFrequency: 447.425 MHz
       timeout: !default ""
@@ -3398,6 +3491,7 @@ channels:
   - fm:
       id: ch103
       name: Concord K6POU
+      scanListRef: scan6
       rxFrequency: 145.33 MHz
       txFrequency: 144.73 MHz
       timeout: !default ""
@@ -3426,6 +3520,7 @@ channels:
   - fm:
       id: ch104
       name: Concord K6POU
+      scanListRef: scan6
       rxFrequency: 443.8 MHz
       txFrequency: 448.8 MHz
       timeout: !default ""
@@ -3454,6 +3549,7 @@ channels:
   - fm:
       id: ch105
       name: Concord N6AMG
+      scanListRef: scan6
       rxFrequency: 440.3 MHz
       txFrequency: 445.3 MHz
       timeout: !default ""
@@ -3480,6 +3576,7 @@ channels:
   - fm:
       id: ch106
       name: Concord W6CX
+      scanListRef: scan6
       rxFrequency: 147.06 MHz
       txFrequency: 147.66 MHz
       timeout: !default ""
@@ -3508,6 +3605,7 @@ channels:
   - fm:
       id: ch107
       name: Concord W6CX
+      scanListRef: scan6
       rxFrequency: 441.325 MHz
       txFrequency: 446.325 MHz
       timeout: !default ""
@@ -3535,6 +3633,7 @@ channels:
   - fm:
       id: ch108
       name: Concord W6YOP
+      scanListRef: scan6
       rxFrequency: 441.75 MHz
       txFrequency: 446.75 MHz
       timeout: !default ""
@@ -3563,6 +3662,7 @@ channels:
   - fm:
       id: ch109
       name: Concord WB6FRM
+      scanListRef: scan6
       rxFrequency: 440.325 MHz
       txFrequency: 445.325 MHz
       timeout: !default ""
@@ -3589,6 +3689,7 @@ channels:
   - fm:
       id: ch110
       name: El Cerrito N6GVI
+      scanListRef: scan6
       rxFrequency: 444.7 MHz
       txFrequency: 449.7 MHz
       timeout: !default ""
@@ -3616,6 +3717,7 @@ channels:
   - fm:
       id: ch111
       name: Martinez KF6HTE
+      scanListRef: scan6
       rxFrequency: 444.45 MHz
       txFrequency: 449.45 MHz
       timeout: !default ""
@@ -3643,6 +3745,7 @@ channels:
   - fm:
       id: ch112
       name: Orinda KE6PTT
+      scanListRef: scan6
       rxFrequency: 444 MHz
       txFrequency: 449 MHz
       timeout: !default ""
@@ -3670,6 +3773,7 @@ channels:
   - fm:
       id: ch113
       name: Orinda N6QOP
+      scanListRef: scan6
       rxFrequency: 443.05 MHz
       txFrequency: 448.05 MHz
       timeout: !default ""
@@ -3697,6 +3801,7 @@ channels:
   - fm:
       id: ch114
       name: Richmond WA6DUR
+      scanListRef: scan6
       rxFrequency: 442.15 MHz
       txFrequency: 447.15 MHz
       timeout: !default ""
@@ -3724,6 +3829,7 @@ channels:
   - fm:
       id: ch115
       name: San Pablo WA6KQB
+      scanListRef: scan6
       rxFrequency: 145.11 MHz
       txFrequency: 144.51 MHz
       timeout: !default ""
@@ -3751,6 +3857,7 @@ channels:
   - fm:
       id: ch116
       name: San Pablo WA6KQB
+      scanListRef: scan6
       rxFrequency: 444.275 MHz
       txFrequency: 449.275 MHz
       timeout: !default ""
@@ -3778,6 +3885,7 @@ channels:
   - fm:
       id: ch117
       name: Walnut Creek K6M
+      scanListRef: scan6
       rxFrequency: 442.525 MHz
       txFrequency: 447.525 MHz
       timeout: !default ""
@@ -3805,6 +3913,7 @@ channels:
   - fm:
       id: ch118
       name: Walnut Creek KK6
+      scanListRef: scan6
       rxFrequency: 443.825 MHz
       txFrequency: 448.825 MHz
       timeout: !default ""
@@ -3832,6 +3941,7 @@ channels:
   - fm:
       id: ch119
       name: Walnut Creek N6M
+      scanListRef: scan6
       rxFrequency: 443.475 MHz
       txFrequency: 448.475 MHz
       timeout: !default ""
@@ -3859,6 +3969,7 @@ channels:
   - dmr:
       id: ch120
       name: -=CntCsta Dig=-
+      scanListRef: scan6
       rxFrequency: 440 MHz
       txFrequency: 440 MHz
       timeout: !default ""
@@ -3889,6 +4000,7 @@ channels:
   - dmr:
       id: ch121
       name: Cncrd W6CX Diab
+      scanListRef: scan6
       rxFrequency: 144.925 MHz
       txFrequency: 147.425 MHz
       timeout: !default ""
@@ -3919,6 +4031,7 @@ channels:
   - dmr:
       id: ch122
       name: Cncrd W6CX Dyn
+      scanListRef: scan6
       rxFrequency: 144.925 MHz
       txFrequency: 147.425 MHz
       timeout: !default ""
@@ -3949,6 +4062,7 @@ channels:
   - dmr:
       id: ch123
       name: Cncrd W6CX Diab
+      scanListRef: scan6
       rxFrequency: 145 MHz
       txFrequency: 147.5 MHz
       timeout: !default ""
@@ -3979,6 +4093,7 @@ channels:
   - dmr:
       id: ch124
       name: Cncrd W6CX Dyn
+      scanListRef: scan6
       rxFrequency: 145 MHz
       txFrequency: 147.5 MHz
       timeout: !default ""
@@ -4009,6 +4124,7 @@ channels:
   - dmr:
       id: ch125
       name: Pitts K6PIT Diab
+      scanListRef: scan6
       rxFrequency: 440.1375 MHz
       txFrequency: 445.1375 MHz
       timeout: !default ""
@@ -4039,6 +4155,7 @@ channels:
   - dmr:
       id: ch126
       name: Pitts K6PIT Dyn
+      scanListRef: scan6
       rxFrequency: 440.1375 MHz
       txFrequency: 445.1375 MHz
       timeout: !default ""
@@ -4069,6 +4186,7 @@ channels:
   - dmr:
       id: ch127
       name: Pitts K6PIT Ncal
+      scanListRef: scan6
       rxFrequency: 440.1375 MHz
       txFrequency: 445.1375 MHz
       timeout: !default ""
@@ -4129,6 +4247,7 @@ channels:
   - fm:
       id: ch129
       name: Alameda K6QLF
+      scanListRef: scan7
       rxFrequency: 444.575 MHz
       txFrequency: 449.575 MHz
       timeout: !default ""
@@ -4156,6 +4275,7 @@ channels:
   - fm:
       id: ch130
       name: Alameda KF6ALA
+      scanListRef: scan7
       rxFrequency: 147.825 MHz
       txFrequency: 147.225 MHz
       timeout: !default ""
@@ -4184,6 +4304,7 @@ channels:
   - fm:
       id: ch131
       name: Berkeley K6DJR
+      scanListRef: scan7
       rxFrequency: 442.725 MHz
       txFrequency: 447.725 MHz
       timeout: !default ""
@@ -4210,6 +4331,7 @@ channels:
   - fm:
       id: ch132
       name: Berkeley KB6LED
+      scanListRef: scan7
       rxFrequency: 145.29 MHz
       txFrequency: 144.69 MHz
       timeout: !default ""
@@ -4237,6 +4359,7 @@ channels:
   - fm:
       id: ch133
       name: Berkeley N6BRK
+      scanListRef: scan7
       rxFrequency: 440.9 MHz
       txFrequency: 445.9 MHz
       timeout: !default ""
@@ -4265,6 +4388,7 @@ channels:
   - fm:
       id: ch134
       name: Berkeley WA6ZTY
+      scanListRef: scan7
       rxFrequency: 442.275 MHz
       txFrequency: 447.275 MHz
       timeout: !default ""
@@ -4292,6 +4416,7 @@ channels:
   - fm:
       id: ch135
       name: Berkeley WB6WTM
+      scanListRef: scan7
       rxFrequency: 440.4 MHz
       txFrequency: 445.4 MHz
       timeout: !default ""
@@ -4319,6 +4444,7 @@ channels:
   - fm:
       id: ch136
       name: Emeryville K6PXR
+      scanListRef: scan7
       rxFrequency: 444.8125 MHz
       txFrequency: 449.8125 MHz
       timeout: !default ""
@@ -4346,6 +4472,7 @@ channels:
   - fm:
       id: ch137
       name: Fremont K6GOD
+      scanListRef: scan7
       rxFrequency: 440.175 MHz
       txFrequency: 445.175 MHz
       timeout: !default ""
@@ -4374,6 +4501,7 @@ channels:
   - fm:
       id: ch138
       name: Fremont KC6WXO
+      scanListRef: scan7
       rxFrequency: 441.125 MHz
       txFrequency: 446.125 MHz
       timeout: !default ""
@@ -4402,6 +4530,7 @@ channels:
   - fm:
       id: ch139
       name: Fremont N6HWI
+      scanListRef: scan7
       rxFrequency: 443.725 MHz
       txFrequency: 448.725 MHz
       timeout: !default ""
@@ -4429,6 +4558,7 @@ channels:
   - fm:
       id: ch140
       name: Fremont N6KGN
+      scanListRef: scan7
       rxFrequency: 440.9 MHz
       txFrequency: 445.9 MHz
       timeout: !default ""
@@ -4457,6 +4587,7 @@ channels:
   - fm:
       id: ch141
       name: Fremont WA6PWW
+      scanListRef: scan7
       rxFrequency: 147.015 MHz
       txFrequency: 147.615 MHz
       timeout: !default ""
@@ -4484,6 +4615,7 @@ channels:
   - fm:
       id: ch142
       name: Fremont WA6PWW
+      scanListRef: scan7
       rxFrequency: 442.6 MHz
       txFrequency: 447.6 MHz
       timeout: !default ""
@@ -4512,6 +4644,7 @@ channels:
   - fm:
       id: ch143
       name: Fremont WB6ECE
+      scanListRef: scan7
       rxFrequency: 441.3 MHz
       txFrequency: 446.3 MHz
       timeout: !default ""
@@ -4539,6 +4672,7 @@ channels:
   - fm:
       id: ch144
       name: Hayward KB6LED
+      scanListRef: scan7
       rxFrequency: 147.975 MHz
       txFrequency: 147.375 MHz
       timeout: !default ""
@@ -4566,6 +4700,7 @@ channels:
   - fm:
       id: ch145
       name: Hayward KB6LED
+      scanListRef: scan7
       rxFrequency: 440.95 MHz
       txFrequency: 445.95 MHz
       timeout: !default ""
@@ -4593,6 +4728,7 @@ channels:
   - fm:
       id: ch146
       name: Livermore K7FED
+      scanListRef: scan7
       rxFrequency: 444.125 MHz
       txFrequency: 449.125 MHz
       timeout: !default ""
@@ -4621,6 +4757,7 @@ channels:
   - fm:
       id: ch147
       name: Livermore KI6FEO
+      scanListRef: scan7
       rxFrequency: 440.6 MHz
       txFrequency: 445.6 MHz
       timeout: !default ""
@@ -4648,6 +4785,7 @@ channels:
   - fm:
       id: ch148
       name: Livermore W6LLL
+      scanListRef: scan7
       rxFrequency: 146.775 MHz
       txFrequency: 146.175 MHz
       timeout: !default ""
@@ -4676,6 +4814,7 @@ channels:
   - fm:
       id: ch149
       name: Livermore WA6ODP
+      scanListRef: scan7
       rxFrequency: 145.35 MHz
       txFrequency: 144.75 MHz
       timeout: !default ""
@@ -4704,6 +4843,7 @@ channels:
   - fm:
       id: ch150
       name: Newark KB6LED
+      scanListRef: scan7
       rxFrequency: 147.975 MHz
       txFrequency: 147.375 MHz
       timeout: !default ""
@@ -4731,6 +4871,7 @@ channels:
   - fm:
       id: ch151
       name: Newark N3EL
+      scanListRef: scan7
       rxFrequency: 444.15 MHz
       txFrequency: 449.15 MHz
       timeout: !default ""
@@ -4759,6 +4900,7 @@ channels:
   - fm:
       id: ch152
       name: Newark N6MM
+      scanListRef: scan7
       rxFrequency: 440.525 MHz
       txFrequency: 445.525 MHz
       timeout: !default ""
@@ -4786,6 +4928,7 @@ channels:
   - fm:
       id: ch153
       name: Oakland AC6OT
+      scanListRef: scan7
       rxFrequency: 443.35 MHz
       txFrequency: 448.35 MHz
       timeout: !default ""
@@ -4813,6 +4956,7 @@ channels:
   - fm:
       id: ch154
       name: Oakland K6LNK
+      scanListRef: scan7
       rxFrequency: 146.85 MHz
       txFrequency: 146.25 MHz
       timeout: !default ""
@@ -4840,6 +4984,7 @@ channels:
   - fm:
       id: ch155
       name: Oakland KD6QDW
+      scanListRef: scan7
       rxFrequency: 442.25 MHz
       txFrequency: 447.25 MHz
       timeout: !default ""
@@ -4867,6 +5012,7 @@ channels:
   - fm:
       id: ch156
       name: Oakland N6QOP
+      scanListRef: scan7
       rxFrequency: 443.475 MHz
       txFrequency: 448.475 MHz
       timeout: !default ""
@@ -4894,6 +5040,7 @@ channels:
   - fm:
       id: ch157
       name: Oakland W6BUR
+      scanListRef: scan7
       rxFrequency: 146.67 MHz
       txFrequency: 146.07 MHz
       timeout: !default ""
@@ -4921,6 +5068,7 @@ channels:
   - fm:
       id: ch158
       name: Oakland W6RCA
+      scanListRef: scan7
       rxFrequency: 441.225 MHz
       txFrequency: 446.225 MHz
       timeout: !default ""
@@ -4948,6 +5096,7 @@ channels:
   - fm:
       id: ch159
       name: Oakland W6YOP
+      scanListRef: scan7
       rxFrequency: 441.475 MHz
       txFrequency: 446.475 MHz
       timeout: !default ""
@@ -4976,6 +5125,7 @@ channels:
   - fm:
       id: ch160
       name: Oakland W6YOP
+      scanListRef: scan7
       rxFrequency: 444.775 MHz
       txFrequency: 449.775 MHz
       timeout: !default ""
@@ -5004,6 +5154,7 @@ channels:
   - fm:
       id: ch161
       name: Oakland WB6NDJ
+      scanListRef: scan7
       rxFrequency: 146.88 MHz
       txFrequency: 146.28 MHz
       timeout: !default ""
@@ -5031,6 +5182,7 @@ channels:
   - fm:
       id: ch162
       name: Oakland WB6NDJ
+      scanListRef: scan7
       rxFrequency: 442.4 MHz
       txFrequency: 447.4 MHz
       timeout: !default ""
@@ -5058,6 +5210,7 @@ channels:
   - fm:
       id: ch163
       name: Oakland WB6SHU
+      scanListRef: scan7
       rxFrequency: 443.375 MHz
       txFrequency: 448.375 MHz
       timeout: !default ""
@@ -5085,6 +5238,7 @@ channels:
   - fm:
       id: ch164
       name: Oakland WB6TCS
+      scanListRef: scan7
       rxFrequency: 147.21 MHz
       txFrequency: 147.81 MHz
       timeout: !default ""
@@ -5112,6 +5266,7 @@ channels:
   - fm:
       id: ch165
       name: Oakland WB6TCS
+      scanListRef: scan7
       rxFrequency: 444.25 MHz
       txFrequency: 449.25 MHz
       timeout: !default ""
@@ -5139,6 +5294,7 @@ channels:
   - fm:
       id: ch166
       name: Oakland WW6BAY
+      scanListRef: scan7
       rxFrequency: 443.975 MHz
       txFrequency: 448.975 MHz
       timeout: !default ""
@@ -5166,6 +5322,7 @@ channels:
   - fm:
       id: ch167
       name: Pleasanton AD6KV
+      scanListRef: scan7
       rxFrequency: 147.12 MHz
       txFrequency: 147.72 MHz
       timeout: !default ""
@@ -5194,6 +5351,7 @@ channels:
   - fm:
       id: ch168
       name: Pleasanton K6LNK
+      scanListRef: scan7
       rxFrequency: 442.075 MHz
       txFrequency: 447.075 MHz
       timeout: !default ""
@@ -5221,6 +5379,7 @@ channels:
   - fm:
       id: ch169
       name: Pleasanton W6SRR
+      scanListRef: scan7
       rxFrequency: 147.045 MHz
       txFrequency: 147.645 MHz
       timeout: !default ""
@@ -5249,6 +5408,7 @@ channels:
   - fm:
       id: ch170
       name: Pleasanton W6SRR
+      scanListRef: scan7
       rxFrequency: 442.625 MHz
       txFrequency: 447.625 MHz
       timeout: !default ""
@@ -5277,6 +5437,7 @@ channels:
   - fm:
       id: ch171
       name: San Leandro K6KB
+      scanListRef: scan7
       rxFrequency: 443.375 MHz
       txFrequency: 448.375 MHz
       timeout: !default ""
@@ -5305,6 +5466,7 @@ channels:
   - fm:
       id: ch172
       name: San Leandro W6RG
+      scanListRef: scan7
       rxFrequency: 147.24 MHz
       txFrequency: 147.84 MHz
       timeout: !default ""
@@ -5332,6 +5494,7 @@ channels:
   - fm:
       id: ch173
       name: San Leandro W6RG
+      scanListRef: scan7
       rxFrequency: 444.2 MHz
       txFrequency: 449.2 MHz
       timeout: !default ""
@@ -5359,6 +5522,7 @@ channels:
   - fm:
       id: ch174
       name: San Lorenzo KM6H
+      scanListRef: scan7
       rxFrequency: 441.45 MHz
       txFrequency: 446.45 MHz
       timeout: !default ""
@@ -5387,6 +5551,7 @@ channels:
   - fm:
       id: ch175
       name: Union City KM6EF
+      scanListRef: scan7
       rxFrequency: 146.61 MHz
       txFrequency: 146.01 MHz
       timeout: !default ""
@@ -5444,6 +5609,7 @@ channels:
   - dmr:
       id: ch177
       name: Lvrm K6LRG Anar
+      scanListRef: scan7
       rxFrequency: 441.825 MHz
       txFrequency: 446.825 MHz
       timeout: !default ""
@@ -5474,6 +5640,7 @@ channels:
   - dmr:
       id: ch178
       name: Lvrm K6LRG Cali
+      scanListRef: scan7
       rxFrequency: 441.825 MHz
       txFrequency: 446.825 MHz
       timeout: !default ""
@@ -5504,6 +5671,7 @@ channels:
   - dmr:
       id: ch179
       name: Lvrm K6LRG Ncal
+      scanListRef: scan7
       rxFrequency: 441.825 MHz
       txFrequency: 446.825 MHz
       timeout: !default ""
@@ -5534,6 +5702,7 @@ channels:
   - dmr:
       id: ch180
       name: Ples W6SRR Cali
+      scanListRef: scan7
       rxFrequency: 443.5125 MHz
       txFrequency: 448.5125 MHz
       timeout: !default ""
@@ -5564,6 +5733,7 @@ channels:
   - dmr:
       id: ch181
       name: Ples W6SRR Anar
+      scanListRef: scan7
       rxFrequency: 443.5125 MHz
       txFrequency: 448.5125 MHz
       timeout: !default ""
@@ -5624,6 +5794,7 @@ channels:
   - fm:
       id: ch183
       name: Campbell NO1PC
+      scanListRef: scan8
       rxFrequency: 442.175 MHz
       txFrequency: 447.175 MHz
       timeout: !default ""
@@ -5652,6 +5823,7 @@ channels:
   - fm:
       id: ch184
       name: Cupertino K6SA
+      scanListRef: scan8
       rxFrequency: 443.15 MHz
       txFrequency: 448.15 MHz
       timeout: !default ""
@@ -5680,6 +5852,7 @@ channels:
   - fm:
       id: ch185
       name: Cupertino W6TDM
+      scanListRef: scan8
       rxFrequency: 440.15 MHz
       txFrequency: 445.15 MHz
       timeout: !default ""
@@ -5707,6 +5880,7 @@ channels:
   - fm:
       id: ch186
       name: Fremont WA6FUL
+      scanListRef: scan8
       rxFrequency: 442.55 MHz
       txFrequency: 447.55 MHz
       timeout: !default ""
@@ -5733,6 +5907,7 @@ channels:
   - fm:
       id: ch187
       name: Los Altos Hills
+      scanListRef: scan8
       rxFrequency: 146.94 MHz
       txFrequency: 146.34 MHz
       timeout: !default ""
@@ -5760,6 +5935,7 @@ channels:
   - fm:
       id: ch188
       name: Los Altos Hills
+      scanListRef: scan8
       rxFrequency: 146.745 MHz
       txFrequency: 146.145 MHz
       timeout: !default ""
@@ -5787,6 +5963,7 @@ channels:
   - fm:
       id: ch189
       name: Los Altos Hills
+      scanListRef: scan8
       rxFrequency: 441.525 MHz
       txFrequency: 446.525 MHz
       timeout: !default ""
@@ -5815,6 +5992,7 @@ channels:
   - fm:
       id: ch190
       name: Los Altos Hills
+      scanListRef: scan8
       rxFrequency: 444.225 MHz
       txFrequency: 449.225 MHz
       timeout: !default ""
@@ -5842,6 +6020,7 @@ channels:
   - fm:
       id: ch191
       name: Los Altos KH6N
+      scanListRef: scan8
       rxFrequency: 440.875 MHz
       txFrequency: 445.875 MHz
       timeout: !default ""
@@ -5869,6 +6048,7 @@ channels:
   - fm:
       id: ch192
       name: Los Gatos K6FB
+      scanListRef: scan8
       rxFrequency: 145.45 MHz
       txFrequency: 144.85 MHz
       timeout: !default ""
@@ -5896,6 +6076,7 @@ channels:
   - fm:
       id: ch193
       name: Los Gatos KC6TYG
+      scanListRef: scan8
       rxFrequency: 440.65 MHz
       txFrequency: 445.65 MHz
       timeout: !default ""
@@ -5923,6 +6104,7 @@ channels:
   - fm:
       id: ch194
       name: Los Gatos N6UUI
+      scanListRef: scan8
       rxFrequency: 441.05 MHz
       txFrequency: 446.05 MHz
       timeout: !default ""
@@ -5950,6 +6132,7 @@ channels:
   - fm:
       id: ch195
       name: Los Gatos NO1PC
+      scanListRef: scan8
       rxFrequency: 443.75 MHz
       txFrequency: 448.75 MHz
       timeout: !default ""
@@ -5978,6 +6161,7 @@ channels:
   - fm:
       id: ch196
       name: Los Gatos W6RCA
+      scanListRef: scan8
       rxFrequency: 441.625 MHz
       txFrequency: 446.625 MHz
       timeout: !default ""
@@ -6005,6 +6189,7 @@ channels:
   - fm:
       id: ch197
       name: Los Gatos WB6KHP
+      scanListRef: scan8
       rxFrequency: 444.975 MHz
       txFrequency: 449.975 MHz
       timeout: !default ""
@@ -6033,6 +6218,7 @@ channels:
   - fm:
       id: ch198
       name: Milpitas W6MLP
+      scanListRef: scan8
       rxFrequency: 145.43 MHz
       txFrequency: 144.83 MHz
       timeout: !default ""
@@ -6060,6 +6246,7 @@ channels:
   - fm:
       id: ch199
       name: Morgan Hill K7DA
+      scanListRef: scan8
       rxFrequency: 147.33 MHz
       txFrequency: 147.93 MHz
       timeout: !default ""
@@ -6087,6 +6274,7 @@ channels:
   - fm:
       id: ch200
       name: Morgan Hill K7DA
+      scanListRef: scan8
       rxFrequency: 442.975 MHz
       txFrequency: 447.975 MHz
       timeout: !default ""
@@ -6114,6 +6302,7 @@ channels:
   - fm:
       id: ch201
       name: Morgan Hill KA6Z
+      scanListRef: scan8
       rxFrequency: 440.575 MHz
       txFrequency: 445.575 MHz
       timeout: !default ""
@@ -6141,6 +6330,7 @@ channels:
   - fm:
       id: ch202
       name: Morgan Hill KJ6V
+      scanListRef: scan8
       rxFrequency: 147.3 MHz
       txFrequency: 147.9 MHz
       timeout: !default ""
@@ -6169,6 +6359,7 @@ channels:
   - fm:
       id: ch203
       name: Morgan hill KJ6V
+      scanListRef: scan8
       rxFrequency: 443.5 MHz
       txFrequency: 448.5 MHz
       timeout: !default ""
@@ -6197,6 +6388,7 @@ channels:
   - fm:
       id: ch204
       name: Morgan Hill W6GG
+      scanListRef: scan8
       rxFrequency: 147.825 MHz
       txFrequency: 147.225 MHz
       timeout: !default ""
@@ -6224,6 +6416,7 @@ channels:
   - fm:
       id: ch205
       name: Mountain View W6
+      scanListRef: scan8
       rxFrequency: 145.27 MHz
       txFrequency: 144.67 MHz
       timeout: !default ""
@@ -6251,6 +6444,7 @@ channels:
   - fm:
       id: ch206
       name: Mountain View W6
+      scanListRef: scan8
       rxFrequency: 440.8 MHz
       txFrequency: 445.8 MHz
       timeout: !default ""
@@ -6278,6 +6472,7 @@ channels:
   - fm:
       id: ch207
       name: Palo Alto K6FB
+      scanListRef: scan8
       rxFrequency: 442.575 MHz
       txFrequency: 447.575 MHz
       timeout: !default ""
@@ -6305,6 +6500,7 @@ channels:
   - fm:
       id: ch208
       name: Palo Alto K6OTR
+      scanListRef: scan8
       rxFrequency: 442.8 MHz
       txFrequency: 447.8 MHz
       timeout: !default ""
@@ -6332,6 +6528,7 @@ channels:
   - fm:
       id: ch209
       name: Palo Alto KB6LED
+      scanListRef: scan8
       rxFrequency: 444.95 MHz
       txFrequency: 449.95 MHz
       timeout: !default ""
@@ -6359,6 +6556,7 @@ channels:
   - fm:
       id: ch210
       name: Palo Alto KJ6K
+      scanListRef: scan8
       rxFrequency: 443.225 MHz
       txFrequency: 448.225 MHz
       timeout: !default ""
@@ -6385,6 +6583,7 @@ channels:
   - fm:
       id: ch211
       name: Palo Alto N6BDE
+      scanListRef: scan8
       rxFrequency: 440.2 MHz
       txFrequency: 445.2 MHz
       timeout: !default ""
@@ -6412,6 +6611,7 @@ channels:
   - fm:
       id: ch212
       name: Palo Alto N6NFI
+      scanListRef: scan8
       rxFrequency: 145.23 MHz
       txFrequency: 144.63 MHz
       timeout: !default ""
@@ -6440,6 +6640,7 @@ channels:
   - fm:
       id: ch213
       name: Palo Alto W6OOL
+      scanListRef: scan8
       rxFrequency: 443 MHz
       txFrequency: 448 MHz
       timeout: !default ""
@@ -6466,6 +6667,7 @@ channels:
   - fm:
       id: ch214
       name: Palo Alto W6TI
+      scanListRef: scan8
       rxFrequency: 147.36 MHz
       txFrequency: 147.96 MHz
       timeout: !default ""
@@ -6493,6 +6695,7 @@ channels:
   - fm:
       id: ch215
       name: Palo Alto WW6BAY
+      scanListRef: scan8
       rxFrequency: 444.425 MHz
       txFrequency: 449.425 MHz
       timeout: !default ""
@@ -6520,6 +6723,7 @@ channels:
   - fm:
       id: ch216
       name: Palo Alto WW6BAY
+      scanListRef: scan8
       rxFrequency: 443.225 MHz
       txFrequency: 448.225 MHz
       timeout: !default ""
@@ -6547,6 +6751,7 @@ channels:
   - fm:
       id: ch217
       name: Palo Alto WW6BAY
+      scanListRef: scan8
       rxFrequency: 145.39 MHz
       txFrequency: 144.79 MHz
       timeout: !default ""
@@ -6574,6 +6779,7 @@ channels:
   - fm:
       id: ch218
       name: Palo Alto WW6HP
+      scanListRef: scan8
       rxFrequency: 442 MHz
       txFrequency: 447 MHz
       timeout: !default ""
@@ -6601,6 +6807,7 @@ channels:
   - fm:
       id: ch219
       name: San Jose
+      scanListRef: scan8
       rxFrequency: 442.225 MHz
       txFrequency: 447.225 MHz
       timeout: !default ""
@@ -6628,6 +6835,7 @@ channels:
   - fm:
       id: ch220
       name: San Jose AA6BT
+      scanListRef: scan8
       rxFrequency: 146.115 MHz
       txFrequency: 146.715 MHz
       timeout: !default ""
@@ -6655,6 +6863,7 @@ channels:
   - fm:
       id: ch221
       name: San Jose K6INC
+      scanListRef: scan8
       rxFrequency: 442.3 MHz
       txFrequency: 447.3 MHz
       timeout: !default ""
@@ -6682,6 +6891,7 @@ channels:
   - fm:
       id: ch222
       name: San Jose K6INC
+      scanListRef: scan8
       rxFrequency: 146.82 MHz
       txFrequency: 146.22 MHz
       timeout: !default ""
@@ -6709,6 +6919,7 @@ channels:
   - fm:
       id: ch223
       name: San Jose K6JSI
+      scanListRef: scan8
       rxFrequency: 442.9 MHz
       txFrequency: 447.9 MHz
       timeout: !default ""
@@ -6736,6 +6947,7 @@ channels:
   - fm:
       id: ch224
       name: San Jose K6LLC
+      scanListRef: scan8
       rxFrequency: 440.225 MHz
       txFrequency: 445.225 MHz
       timeout: !default ""
@@ -6763,6 +6975,7 @@ channels:
   - fm:
       id: ch225
       name: San Jose K6LNK
+      scanListRef: scan8
       rxFrequency: 443.475 MHz
       txFrequency: 448.475 MHz
       timeout: !default ""
@@ -6790,6 +7003,7 @@ channels:
   - fm:
       id: ch226
       name: San Jose K6MIA
+      scanListRef: scan8
       rxFrequency: 442.85 MHz
       txFrequency: 447.85 MHz
       timeout: !default ""
@@ -6817,6 +7031,7 @@ channels:
   - fm:
       id: ch227
       name: San Jose K6YZS
+      scanListRef: scan8
       rxFrequency: 442.95 MHz
       txFrequency: 447.95 MHz
       timeout: !default ""
@@ -6844,6 +7059,7 @@ channels:
   - fm:
       id: ch228
       name: San Jose KB5JR
+      scanListRef: scan8
       rxFrequency: 443.3 MHz
       txFrequency: 448.3 MHz
       timeout: !default ""
@@ -6871,6 +7087,7 @@ channels:
   - fm:
       id: ch229
       name: San Jose KB6FEC
+      scanListRef: scan8
       rxFrequency: 146.895 MHz
       txFrequency: 146.295 MHz
       timeout: !default ""
@@ -6898,6 +7115,7 @@ channels:
   - fm:
       id: ch230
       name: San Jose KB6FEC
+      scanListRef: scan8
       rxFrequency: 147.165 MHz
       txFrequency: 147.765 MHz
       timeout: !default ""
@@ -6925,6 +7143,7 @@ channels:
   - fm:
       id: ch231
       name: San Jose KE6MON
+      scanListRef: scan8
       rxFrequency: 146.355 MHz
       txFrequency: 146.955 MHz
       timeout: !default ""
@@ -6952,6 +7171,7 @@ channels:
   - fm:
       id: ch232
       name: San Jose KF6FWO
+      scanListRef: scan8
       rxFrequency: 147.285 MHz
       txFrequency: 147.885 MHz
       timeout: !default ""
@@ -6979,6 +7199,7 @@ channels:
   - fm:
       id: ch233
       name: San Jose KF6FWO
+      scanListRef: scan9
       rxFrequency: 441.175 MHz
       txFrequency: 446.175 MHz
       timeout: !default ""
@@ -7006,6 +7227,7 @@ channels:
   - fm:
       id: ch234
       name: San Jose KU6V
+      scanListRef: scan9
       rxFrequency: 442.775 MHz
       txFrequency: 447.775 MHz
       timeout: !default ""
@@ -7034,6 +7256,7 @@ channels:
   - fm:
       id: ch235
       name: San Jose KU6V
+      scanListRef: scan9
       rxFrequency: 444.9 MHz
       txFrequency: 449.9 MHz
       timeout: !default ""
@@ -7061,6 +7284,7 @@ channels:
   - fm:
       id: ch236
       name: San Jose N6MNV
+      scanListRef: scan9
       rxFrequency: 442.7 MHz
       txFrequency: 447.7 MHz
       timeout: !default ""
@@ -7088,6 +7312,7 @@ channels:
   - fm:
       id: ch237
       name: San Jose N6MVT
+      scanListRef: scan9
       rxFrequency: 443.075 MHz
       txFrequency: 448.075 MHz
       timeout: !default ""
@@ -7115,6 +7340,7 @@ channels:
   - fm:
       id: ch238
       name: San Jose N6NAC
+      scanListRef: scan9
       rxFrequency: 444.625 MHz
       txFrequency: 449.625 MHz
       timeout: !default ""
@@ -7142,6 +7368,7 @@ channels:
   - fm:
       id: ch239
       name: San Jose N6SPD
+      scanListRef: scan9
       rxFrequency: 444.6 MHz
       txFrequency: 449.6 MHz
       timeout: !default ""
@@ -7170,6 +7397,7 @@ channels:
   - fm:
       id: ch240
       name: San Jose N9JIM
+      scanListRef: scan9
       rxFrequency: 444.75 MHz
       txFrequency: 449.75 MHz
       timeout: !default ""
@@ -7197,6 +7425,7 @@ channels:
   - fm:
       id: ch241
       name: San Jose W6AMT
+      scanListRef: scan9
       rxFrequency: 443.275 MHz
       txFrequency: 448.275 MHz
       timeout: !default ""
@@ -7224,6 +7453,7 @@ channels:
   - fm:
       id: ch242
       name: San Jose W6GGF
+      scanListRef: scan9
       rxFrequency: 442.5 MHz
       txFrequency: 447.5 MHz
       timeout: !default ""
@@ -7251,6 +7481,7 @@ channels:
   - fm:
       id: ch243
       name: San Jose W6PIY
+      scanListRef: scan9
       rxFrequency: 147.39 MHz
       txFrequency: 147.99 MHz
       timeout: !default ""
@@ -7278,6 +7509,7 @@ channels:
   - fm:
       id: ch244
       name: San Jose W6SMQ
+      scanListRef: scan9
       rxFrequency: 440.1 MHz
       txFrequency: 445.1 MHz
       timeout: !default ""
@@ -7305,6 +7537,7 @@ channels:
   - fm:
       id: ch245
       name: San Jose W6UU
+      scanListRef: scan9
       rxFrequency: 146.985 MHz
       txFrequency: 146.385 MHz
       timeout: !default ""
@@ -7332,6 +7565,7 @@ channels:
   - fm:
       id: ch246
       name: San Jose W6UU
+      scanListRef: scan9
       rxFrequency: 442.425 MHz
       txFrequency: 447.425 MHz
       timeout: !default ""
@@ -7359,6 +7593,7 @@ channels:
   - fm:
       id: ch247
       name: San Jose W6YL
+      scanListRef: scan9
       rxFrequency: 443.9 MHz
       txFrequency: 448.9 MHz
       timeout: !default ""
@@ -7386,6 +7621,7 @@ channels:
   - fm:
       id: ch248
       name: San Jose WA2IBM
+      scanListRef: scan9
       rxFrequency: 145.19 MHz
       txFrequency: 144.59 MHz
       timeout: !default ""
@@ -7414,6 +7650,7 @@ channels:
   - fm:
       id: ch249
       name: San Jose WA2IBM
+      scanListRef: scan9
       rxFrequency: 441.15 MHz
       txFrequency: 446.15 MHz
       timeout: !default ""
@@ -7442,6 +7679,7 @@ channels:
   - fm:
       id: ch250
       name: San Jose WA6GFY
+      scanListRef: scan9
       rxFrequency: 443.775 MHz
       txFrequency: 448.775 MHz
       timeout: !default ""
@@ -7469,6 +7707,7 @@ channels:
   - fm:
       id: ch251
       name: San Jose WA6TEM
+      scanListRef: scan9
       rxFrequency: 147.855 MHz
       txFrequency: 147.255 MHz
       timeout: !default ""
@@ -7496,6 +7735,7 @@ channels:
   - fm:
       id: ch252
       name: San Jose WA6YCZ
+      scanListRef: scan9
       rxFrequency: 147.15 MHz
       txFrequency: 147.75 MHz
       timeout: !default ""
@@ -7523,6 +7763,7 @@ channels:
   - fm:
       id: ch253
       name: San Jose WA6YCZ
+      scanListRef: scan9
       rxFrequency: 444.4 MHz
       txFrequency: 449.4 MHz
       timeout: !default ""
@@ -7550,6 +7791,7 @@ channels:
   - fm:
       id: ch254
       name: San Jose WA6YLV
+      scanListRef: scan9
       rxFrequency: 442.875 MHz
       txFrequency: 447.875 MHz
       timeout: !default ""
@@ -7577,6 +7819,7 @@ channels:
   - fm:
       id: ch255
       name: San Jose WA6YOP
+      scanListRef: scan9
       rxFrequency: 440.275 MHz
       txFrequency: 445.275 MHz
       timeout: !default ""
@@ -7605,6 +7848,7 @@ channels:
   - fm:
       id: ch256
       name: San Jose WB6ECE
+      scanListRef: scan9
       rxFrequency: 441.3 MHz
       txFrequency: 446.3 MHz
       timeout: !default ""
@@ -7632,6 +7876,7 @@ channels:
   - fm:
       id: ch257
       name: San Jose WB6JSO
+      scanListRef: scan9
       rxFrequency: 444.45 MHz
       txFrequency: 449.45 MHz
       timeout: !default ""
@@ -7659,6 +7904,7 @@ channels:
   - fm:
       id: ch258
       name: San Jose WB6KHP
+      scanListRef: scan9
       rxFrequency: 444.7 MHz
       txFrequency: 449.7 MHz
       timeout: !default ""
@@ -7687,6 +7933,7 @@ channels:
   - fm:
       id: ch259
       name: San Jose WB6KHP
+      scanListRef: scan9
       rxFrequency: 147.03 MHz
       txFrequency: 147.63 MHz
       timeout: !default ""
@@ -7714,6 +7961,7 @@ channels:
   - fm:
       id: ch260
       name: San Jose WB6OQS
+      scanListRef: scan9
       rxFrequency: 146.76 MHz
       txFrequency: 146.16 MHz
       timeout: !default ""
@@ -7741,6 +7989,7 @@ channels:
   - fm:
       id: ch261
       name: San Jose WB6RNH
+      scanListRef: scan9
       rxFrequency: 444.3 MHz
       txFrequency: 449.3 MHz
       timeout: !default ""
@@ -7768,6 +8017,7 @@ channels:
   - fm:
       id: ch262
       name: San Jose WC6HP
+      scanListRef: scan9
       rxFrequency: 443.7 MHz
       txFrequency: 448.7 MHz
       timeout: !default ""
@@ -7796,6 +8046,7 @@ channels:
   - fm:
       id: ch263
       name: San Jose WR6ABD
+      scanListRef: scan9
       rxFrequency: 146.64 MHz
       txFrequency: 146.04 MHz
       timeout: !default ""
@@ -7823,6 +8074,7 @@ channels:
   - fm:
       id: ch264
       name: Santa Clara K6SN
+      scanListRef: scan9
       rxFrequency: 442.025 MHz
       txFrequency: 447.025 MHz
       timeout: !default ""
@@ -7850,6 +8102,7 @@ channels:
   - fm:
       id: ch265
       name: Saratoga K6SA
+      scanListRef: scan9
       rxFrequency: 146.655 MHz
       txFrequency: 146.055 MHz
       timeout: !default ""
@@ -7877,6 +8130,7 @@ channels:
   - fm:
       id: ch266
       name: Saratoga W6SVA
+      scanListRef: scan9
       rxFrequency: 443.125 MHz
       txFrequency: 448.125 MHz
       timeout: !default ""
@@ -7903,6 +8157,7 @@ channels:
   - fm:
       id: ch267
       name: Sunnyvale AF6EQ
+      scanListRef: scan9
       rxFrequency: 444.55 MHz
       txFrequency: 439.55 MHz
       timeout: !default ""
@@ -7930,6 +8185,7 @@ channels:
   - fm:
       id: ch268
       name: Sunnyvale K6SNY
+      scanListRef: scan9
       rxFrequency: 145.17 MHz
       txFrequency: 144.57 MHz
       timeout: !default ""
@@ -7957,6 +8213,7 @@ channels:
   - fm:
       id: ch269
       name: Sunnyvale NA6MF
+      scanListRef: scan9
       rxFrequency: 145.25 MHz
       txFrequency: 144.65 MHz
       timeout: !default ""
@@ -7984,6 +8241,7 @@ channels:
   - fm:
       id: ch270
       name: Sunnyvale W1NSA
+      scanListRef: scan9
       rxFrequency: 443.9 MHz
       txFrequency: 448.9 MHz
       timeout: !default ""
@@ -8041,6 +8299,7 @@ channels:
   - dmr:
       id: ch272
       name: Milp WA6KPX Nam
+      scanListRef: scan10
       rxFrequency: 443.4 MHz
       txFrequency: 448.4 MHz
       timeout: !default ""
@@ -8071,6 +8330,7 @@ channels:
   - dmr:
       id: ch273
       name: Milp WA6KPX Cali
+      scanListRef: scan10
       rxFrequency: 443.4 MHz
       txFrequency: 448.4 MHz
       timeout: !default ""
@@ -8101,6 +8361,7 @@ channels:
   - dmr:
       id: ch274
       name: Milp WA6KPX Bay
+      scanListRef: scan10
       rxFrequency: 443.4 MHz
       txFrequency: 448.4 MHz
       timeout: !default ""
@@ -8131,6 +8392,7 @@ channels:
   - dmr:
       id: ch275
       name: Milp WA6KPX Ncal
+      scanListRef: scan10
       rxFrequency: 443.4 MHz
       txFrequency: 448.4 MHz
       timeout: !default ""
@@ -8161,6 +8423,7 @@ channels:
   - dmr:
       id: ch276
       name: Milp WA6KPX MtnW
+      scanListRef: scan10
       rxFrequency: 443.4 MHz
       txFrequency: 448.4 MHz
       timeout: !default ""
@@ -8191,6 +8454,7 @@ channels:
   - dmr:
       id: ch277
       name: PAlto K6OTR Nam
+      scanListRef: scan10
       rxFrequency: 441.85 MHz
       txFrequency: 446.85 MHz
       timeout: !default ""
@@ -8221,6 +8485,7 @@ channels:
   - dmr:
       id: ch278
       name: PAlto K6OTR Cali
+      scanListRef: scan10
       rxFrequency: 441.85 MHz
       txFrequency: 446.85 MHz
       timeout: !default ""
@@ -8251,6 +8516,7 @@ channels:
   - dmr:
       id: ch279
       name: PAlto K6OTR Bay
+      scanListRef: scan10
       rxFrequency: 441.85 MHz
       txFrequency: 446.85 MHz
       timeout: !default ""
@@ -8281,6 +8547,7 @@ channels:
   - dmr:
       id: ch280
       name: PAlto K6OTR Ncal
+      scanListRef: scan10
       rxFrequency: 441.85 MHz
       txFrequency: 446.85 MHz
       timeout: !default ""
@@ -8311,6 +8578,7 @@ channels:
   - dmr:
       id: ch281
       name: PAlto K6OTR MtnW
+      scanListRef: scan10
       rxFrequency: 441.85 MHz
       txFrequency: 446.85 MHz
       timeout: !default ""
@@ -8341,6 +8609,7 @@ channels:
   - dmr:
       id: ch282
       name: PAlt  WW6BAY SCC
+      scanListRef: scan10
       rxFrequency: 444.35 MHz
       txFrequency: 449.35 MHz
       timeout: !default ""
@@ -8371,6 +8640,7 @@ channels:
   - dmr:
       id: ch283
       name: PAlt  WW6BAY Bay
+      scanListRef: scan10
       rxFrequency: 444.35 MHz
       txFrequency: 449.35 MHz
       timeout: !default ""
@@ -8401,6 +8671,7 @@ channels:
   - dmr:
       id: ch284
       name: SJ  W6OTX Dyn
+      scanListRef: scan10
       rxFrequency: 144.9625 MHz
       txFrequency: 145.5625 MHz
       timeout: !default ""
@@ -8431,6 +8702,7 @@ channels:
   - dmr:
       id: ch285
       name: SJ  W6OTX Ncal
+      scanListRef: scan10
       rxFrequency: 144.9625 MHz
       txFrequency: 145.5625 MHz
       timeout: !default ""
@@ -8461,6 +8733,7 @@ channels:
   - dmr:
       id: ch286
       name: SJ  W6OTX Dyn
+      scanListRef: scan10
       rxFrequency: 444.475 MHz
       txFrequency: 449.475 MHz
       timeout: !default ""
@@ -8491,6 +8764,7 @@ channels:
   - dmr:
       id: ch287
       name: SJ  W6OTX Ncal
+      scanListRef: scan10
       rxFrequency: 444.475 MHz
       txFrequency: 449.475 MHz
       timeout: !default ""
@@ -8521,6 +8795,7 @@ channels:
   - dmr:
       id: ch288
       name: Umun WA6YCZ Cali
+      scanListRef: scan10
       rxFrequency: 442.5375 MHz
       txFrequency: 447.5375 MHz
       timeout: !default ""
@@ -8551,6 +8826,7 @@ channels:
   - dmr:
       id: ch289
       name: Umun WA6YCZ SCC
+      scanListRef: scan10
       rxFrequency: 442.5375 MHz
       txFrequency: 447.5375 MHz
       timeout: !default ""
@@ -8581,6 +8857,7 @@ channels:
   - dmr:
       id: ch290
       name: Umun WA6YCZ Bay
+      scanListRef: scan10
       rxFrequency: 442.5375 MHz
       txFrequency: 447.5375 MHz
       timeout: !default ""
@@ -8611,6 +8888,7 @@ channels:
   - dmr:
       id: ch291
       name: Umun WA6YCZ MtnW
+      scanListRef: scan10
       rxFrequency: 442.5375 MHz
       txFrequency: 447.5375 MHz
       timeout: !default ""
@@ -8641,6 +8919,7 @@ channels:
   - dmr:
       id: ch292
       name: Umun WA6YCZ Ncal
+      scanListRef: scan10
       rxFrequency: 442.5375 MHz
       txFrequency: 447.5375 MHz
       timeout: !default ""
@@ -8671,6 +8950,7 @@ channels:
   - dmr:
       id: ch293
       name: Stga KK6USZ Dyn
+      scanListRef: scan10
       rxFrequency: 441.95 MHz
       txFrequency: 446.95 MHz
       timeout: !default ""
@@ -8701,6 +8981,7 @@ channels:
   - dmr:
       id: ch294
       name: Stga KK6USZ SCC
+      scanListRef: scan10
       rxFrequency: 441.95 MHz
       txFrequency: 446.95 MHz
       timeout: !default ""
@@ -8731,6 +9012,7 @@ channels:
   - dmr:
       id: ch295
       name: Stga KK6USZ Ncal
+      scanListRef: scan10
       rxFrequency: 441.95 MHz
       txFrequency: 446.95 MHz
       timeout: !default ""
@@ -8761,6 +9043,7 @@ channels:
   - dmr:
       id: ch296
       name: Stga KK6USZ Bayn
+      scanListRef: scan10
       rxFrequency: 441.95 MHz
       txFrequency: 446.95 MHz
       timeout: !default ""
@@ -8821,6 +9104,7 @@ channels:
   - fm:
       id: ch298
       name: Belmont KR6WP
+      scanListRef: scan11
       rxFrequency: 440.075 MHz
       txFrequency: 445.075 MHz
       timeout: !default ""
@@ -8849,6 +9133,7 @@ channels:
   - fm:
       id: ch299
       name: Belmont WB6CKT
+      scanListRef: scan11
       rxFrequency: 147.09 MHz
       txFrequency: 147.69 MHz
       timeout: !default ""
@@ -8876,6 +9161,7 @@ channels:
   - fm:
       id: ch300
       name: Brisbane K6CV
+      scanListRef: scan11
       rxFrequency: 440.7 MHz
       txFrequency: 445.7 MHz
       timeout: !default ""
@@ -8903,6 +9189,7 @@ channels:
   - fm:
       id: ch301
       name: Burlingame KC6UL
+      scanListRef: scan11
       rxFrequency: 146.805 MHz
       txFrequency: 146.205 MHz
       timeout: !default ""
@@ -8931,6 +9218,7 @@ channels:
   - fm:
       id: ch302
       name: Daly City AB6BN
+      scanListRef: scan11
       rxFrequency: 442.375 MHz
       txFrequency: 447.375 MHz
       timeout: !default ""
@@ -8958,6 +9246,7 @@ channels:
   - fm:
       id: ch303
       name: Daly City KF6REK
+      scanListRef: scan11
       rxFrequency: 442.475 MHz
       txFrequency: 447.475 MHz
       timeout: !default ""
@@ -8985,6 +9274,7 @@ channels:
   - fm:
       id: ch304
       name: Daly City WD6INC
+      scanListRef: scan11
       rxFrequency: 146.835 MHz
       txFrequency: 146.235 MHz
       timeout: !default ""
@@ -9012,6 +9302,7 @@ channels:
   - fm:
       id: ch305
       name: La Honda KC6ULT
+      scanListRef: scan11
       rxFrequency: 146.805 MHz
       txFrequency: 146.205 MHz
       timeout: !default ""
@@ -9039,6 +9330,7 @@ channels:
   - fm:
       id: ch306
       name: La Honda W6SCF
+      scanListRef: scan11
       rxFrequency: 440.1 MHz
       txFrequency: 445.1 MHz
       timeout: !default ""
@@ -9066,6 +9358,7 @@ channels:
   - fm:
       id: ch307
       name: La Honda W6SCF
+      scanListRef: scan11
       rxFrequency: 146.73 MHz
       txFrequency: 146.13 MHz
       timeout: !default ""
@@ -9093,6 +9386,7 @@ channels:
   - fm:
       id: ch308
       name: Pacifica WA6TOW
+      scanListRef: scan11
       rxFrequency: 146.925 MHz
       txFrequency: 146.325 MHz
       timeout: !default ""
@@ -9120,6 +9414,7 @@ channels:
   - fm:
       id: ch309
       name: Pacifica WA6TOW
+      scanListRef: scan11
       rxFrequency: 441.075 MHz
       txFrequency: 446.075 MHz
       timeout: !default ""
@@ -9147,6 +9442,7 @@ channels:
   - fm:
       id: ch310
       name: Pacifica WB6JKV
+      scanListRef: scan11
       rxFrequency: 440.725 MHz
       txFrequency: 445.725 MHz
       timeout: !default ""
@@ -9174,6 +9470,7 @@ channels:
   - fm:
       id: ch311
       name: Pescadero KE6MNJ
+      scanListRef: scan11
       rxFrequency: 146.625 MHz
       txFrequency: 146.025 MHz
       timeout: !default ""
@@ -9201,6 +9498,7 @@ channels:
   - fm:
       id: ch312
       name: Prtla Val KM6DLG
+      scanListRef: scan11
       rxFrequency: 146.085 MHz
       txFrequency: 146.685 MHz
       timeout: !default ""
@@ -9229,6 +9527,7 @@ channels:
   - fm:
       id: ch313
       name: Prtla Val KC6ULT
+      scanListRef: scan11
       rxFrequency: 440.975 MHz
       txFrequency: 445.975 MHz
       timeout: !default ""
@@ -9256,6 +9555,7 @@ channels:
   - fm:
       id: ch314
       name: Redwood City K6M
+      scanListRef: scan11
       rxFrequency: 444.5 MHz
       txFrequency: 449.5 MHz
       timeout: !default ""
@@ -9283,6 +9583,7 @@ channels:
   - fm:
       id: ch315
       name: Redwood City KC6
+      scanListRef: scan11
       rxFrequency: 146.865 MHz
       txFrequency: 146.265 MHz
       timeout: !default ""
@@ -9310,6 +9611,7 @@ channels:
   - fm:
       id: ch316
       name: Redwood City WD6
+      scanListRef: scan11
       rxFrequency: 441.4 MHz
       txFrequency: 446.4 MHz
       timeout: !default ""
@@ -9337,6 +9639,7 @@ channels:
   - fm:
       id: ch317
       name: San Bruno K6PVJ
+      scanListRef: scan11
       rxFrequency: 440.55 MHz
       txFrequency: 445.55 MHz
       timeout: !default ""
@@ -9364,6 +9667,7 @@ channels:
   - fm:
       id: ch318
       name: San Carlos W6CBS
+      scanListRef: scan11
       rxFrequency: 441.6125 MHz
       txFrequency: 446.6125 MHz
       timeout: !default ""
@@ -9391,6 +9695,7 @@ channels:
   - fm:
       id: ch319
       name: San Mateo K7CBL
+      scanListRef: scan11
       rxFrequency: 440.05 MHz
       txFrequency: 445.05 MHz
       timeout: !default ""
@@ -9419,6 +9724,7 @@ channels:
   - fm:
       id: ch320
       name: San Mateo N6MPX
+      scanListRef: scan11
       rxFrequency: 147.3 MHz
       txFrequency: 147.9 MHz
       timeout: !default ""
@@ -9447,6 +9753,7 @@ channels:
   - fm:
       id: ch321
       name: Woodside N6ZX
+      scanListRef: scan11
       rxFrequency: 145.37 MHz
       txFrequency: 144.77 MHz
       timeout: !default ""
@@ -9475,6 +9782,7 @@ channels:
   - fm:
       id: ch322
       name: Woodside N6ZX
+      scanListRef: scan11
       rxFrequency: 440.45 MHz
       txFrequency: 445.45 MHz
       timeout: !default ""
@@ -9502,6 +9810,7 @@ channels:
   - fm:
       id: ch323
       name: Woodside WB6ECE
+      scanListRef: scan11
       rxFrequency: 441.3 MHz
       txFrequency: 446.3 MHz
       timeout: !default ""
@@ -9559,6 +9868,7 @@ channels:
   - dmr:
       id: ch325
       name: Daly N6AMG Cali
+      scanListRef: scan11
       rxFrequency: 440.5 MHz
       txFrequency: 445.5 MHz
       timeout: !default ""
@@ -9589,6 +9899,7 @@ channels:
   - dmr:
       id: ch326
       name: Daly N6AMG Bay
+      scanListRef: scan11
       rxFrequency: 440.5 MHz
       txFrequency: 445.5 MHz
       timeout: !default ""
@@ -9619,6 +9930,7 @@ channels:
   - dmr:
       id: ch327
       name: Daly N6AMG MtnW
+      scanListRef: scan11
       rxFrequency: 440.5 MHz
       txFrequency: 445.5 MHz
       timeout: !default ""
@@ -9649,6 +9961,7 @@ channels:
   - dmr:
       id: ch328
       name: Daly N6AMG Ncal
+      scanListRef: scan11
       rxFrequency: 440.5 MHz
       txFrequency: 445.5 MHz
       timeout: !default ""
@@ -9709,6 +10022,7 @@ channels:
   - fm:
       id: ch330
       name: GMRS1
+      scanListRef: scan12
       rxFrequency: 462.5625 MHz
       txFrequency: 462.5625 MHz
       timeout: !default ""
@@ -9735,6 +10049,7 @@ channels:
   - fm:
       id: ch331
       name: GMRS2
+      scanListRef: scan12
       rxFrequency: 462.5875 MHz
       txFrequency: 462.5875 MHz
       timeout: !default ""
@@ -9761,6 +10076,7 @@ channels:
   - fm:
       id: ch332
       name: GMRS3
+      scanListRef: scan12
       rxFrequency: 462.6125 MHz
       txFrequency: 462.6125 MHz
       timeout: !default ""
@@ -9787,6 +10103,7 @@ channels:
   - fm:
       id: ch333
       name: GMRS4
+      scanListRef: scan12
       rxFrequency: 462.6375 MHz
       txFrequency: 462.6375 MHz
       timeout: !default ""
@@ -9813,6 +10130,7 @@ channels:
   - fm:
       id: ch334
       name: GMRS5
+      scanListRef: scan12
       rxFrequency: 462.6625 MHz
       txFrequency: 462.6625 MHz
       timeout: !default ""
@@ -9839,6 +10157,7 @@ channels:
   - fm:
       id: ch335
       name: GMRS6
+      scanListRef: scan12
       rxFrequency: 462.6875 MHz
       txFrequency: 462.6875 MHz
       timeout: !default ""
@@ -9865,6 +10184,7 @@ channels:
   - fm:
       id: ch336
       name: GMRS7
+      scanListRef: scan12
       rxFrequency: 462.7125 MHz
       txFrequency: 462.7125 MHz
       timeout: !default ""
@@ -9891,6 +10211,7 @@ channels:
   - fm:
       id: ch337
       name: GMRS8
+      scanListRef: scan12
       rxFrequency: 467.5625 MHz
       txFrequency: 467.5625 MHz
       timeout: !default ""
@@ -9947,6 +10268,7 @@ channels:
   - dmr:
       id: ch339
       name: Hot Anarchy
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -9977,6 +10299,7 @@ channels:
   - dmr:
       id: ch340
       name: Hot Diablo
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10007,6 +10330,7 @@ channels:
   - dmr:
       id: ch341
       name: Hot SonomaCounty
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10037,6 +10361,7 @@ channels:
   - dmr:
       id: ch342
       name: Hot NorCal
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10067,6 +10392,7 @@ channels:
   - dmr:
       id: ch343
       name: Hot SNARS
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10097,6 +10423,7 @@ channels:
   - dmr:
       id: ch344
       name: Hot SoCal
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10127,6 +10454,7 @@ channels:
   - dmr:
       id: ch345
       name: Hot Southwest
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10157,6 +10485,7 @@ channels:
   - dmr:
       id: ch346
       name: Hot California
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10187,6 +10516,7 @@ channels:
   - dmr:
       id: ch347
       name: Hot MountainWest
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10217,6 +10547,7 @@ channels:
   - dmr:
       id: ch348
       name: Hot USA Bridge
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10247,6 +10578,7 @@ channels:
   - dmr:
       id: ch349
       name: Hot NorthAmerica
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10277,6 +10609,7 @@ channels:
   - dmr:
       id: ch350
       name: Hot Worldwide
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10307,6 +10640,7 @@ channels:
   - dmr:
       id: ch351
       name: Hot TAC 310
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10337,6 +10671,7 @@ channels:
   - dmr:
       id: ch352
       name: Hot EmComm
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10367,6 +10702,7 @@ channels:
   - dmr:
       id: ch353
       name: Hot Parrot
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10397,6 +10733,7 @@ channels:
   - dmr:
       id: ch354
       name: Hot Home Wifi
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10427,6 +10764,7 @@ channels:
   - dmr:
       id: ch355
       name: Hot Shadow Wifi
+      scanListRef: scan14
       rxFrequency: 434.7 MHz
       txFrequency: 434.7 MHz
       timeout: !default ""
@@ -10587,30 +10925,42 @@ zones:
     anytone:
       hidden: false
   - id: zone9
-    name: Santa Clara
-    A: [ch183, ch184, ch185, ch186, ch187, ch188, ch189, ch190, ch191, ch192, ch193, ch194, ch195, ch196, ch197, ch198, ch199, ch200, ch201, ch202, ch203, ch204, ch205, ch206, ch207, ch208, ch209, ch210, ch211, ch212, ch213, ch214, ch215, ch216, ch217, ch218, ch219, ch220, ch221, ch222, ch223, ch224, ch225, ch226, ch227, ch228, ch229, ch230, ch231, ch232, ch233, ch234, ch235, ch236, ch237, ch238, ch239, ch240, ch241, ch242, ch243, ch244, ch245, ch246, ch247, ch248, ch249, ch250, ch251, ch252, ch253, ch254, ch255, ch256, ch257, ch258, ch259, ch260, ch261, ch262, ch263, ch264, ch265, ch266, ch267, ch268, ch269, ch270, ch272, ch273, ch274, ch275, ch276, ch277, ch278, ch279, ch280, ch281, ch282, ch283, ch284, ch285, ch286, ch287, ch288, ch289, ch290, ch291, ch292, ch293, ch294, ch295, ch296]
+    name: Santa Clara 1
+    A: [ch183, ch184, ch185, ch186, ch187, ch188, ch189, ch190, ch191, ch192, ch193, ch194, ch195, ch196, ch197, ch198, ch199, ch200, ch201, ch202, ch203, ch204, ch205, ch206, ch207, ch208, ch209, ch210, ch211, ch212, ch213, ch214, ch215, ch216, ch217, ch218, ch219, ch220, ch221, ch222, ch223, ch224, ch225, ch226, ch227, ch228, ch229, ch230, ch231, ch232]
     B: []
     anytone:
       hidden: false
   - id: zone10
+    name: Santa Clara 2
+    A: [ch233, ch234, ch235, ch236, ch237, ch238, ch239, ch240, ch241, ch242, ch243, ch244, ch245, ch246, ch247, ch248, ch249, ch250, ch251, ch252, ch253, ch254, ch255, ch256, ch257, ch258, ch259, ch260, ch261, ch262, ch263, ch264, ch265, ch266, ch267, ch268, ch269, ch270]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone11
+    name: Santa Clara Dig
+    A: [ch272, ch273, ch274, ch275, ch276, ch277, ch278, ch279, ch280, ch281, ch282, ch283, ch284, ch285, ch286, ch287, ch288, ch289, ch290, ch291, ch292, ch293, ch294, ch295, ch296]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone12
     name: San Mateo
     A: [ch298, ch299, ch300, ch301, ch302, ch303, ch304, ch305, ch306, ch307, ch308, ch309, ch310, ch311, ch312, ch313, ch314, ch315, ch316, ch317, ch318, ch319, ch320, ch321, ch322, ch323, ch325, ch326, ch327, ch328]
     B: []
     anytone:
       hidden: false
-  - id: zone11
+  - id: zone13
     name: GMRS
     A: [ch330, ch331, ch332, ch333, ch334, ch335, ch336, ch337]
     B: []
     anytone:
       hidden: false
-  - id: zone12
+  - id: zone14
     name: Hotspot
     A: [ch339, ch340, ch341, ch342, ch343, ch344, ch345, ch346, ch347, ch348, ch349, ch350, ch351, ch352, ch353, ch354, ch355]
     B: []
     anytone:
       hidden: false
-  - id: zone13
+  - id: zone15
     name: APRS
     A: [ch358]
     B: []
@@ -10637,7 +10987,7 @@ scanLists:
     channels: [ch103, ch104, ch105, ch106, ch107, ch108, ch109, ch110, ch111, ch112, ch113, ch114, ch115, ch116, ch117, ch118, ch119, ch121, ch122, ch123, ch124, ch125, ch126, ch127]
   - id: scan7
     name: Alameda
-    channels: [ch129, ch130, ch131, ch132, ch133, ch134, ch135, ch136, ch137, ch138, ch139, ch140, ch141, ch142, ch143, ch144, ch145, ch146, ch147, ch148, ch149, ch150, ch151, ch152, ch153, ch154, ch155, ch156, ch157, ch158, ch159, ch160, ch161, ch162, ch163, ch164, ch165, ch166, ch167, ch168, ch169, ch170, ch171, ch172, ch173, ch174, ch175, ch177, ch178]
+    channels: [ch129, ch130, ch131, ch132, ch133, ch134, ch135, ch136, ch137, ch138, ch139, ch140, ch141, ch142, ch143, ch144, ch145, ch146, ch147, ch148, ch149, ch150, ch151, ch152, ch153, ch154, ch155, ch156, ch157, ch158, ch159, ch160, ch161, ch162, ch163, ch164, ch165, ch166, ch167, ch168, ch169, ch170, ch171, ch172, ch173, ch174, ch175, ch177, ch178, ch179]
   - id: scan8
     name: Santa Clara 1
     channels: [ch183, ch184, ch185, ch186, ch187, ch188, ch189, ch190, ch191, ch192, ch193, ch194, ch195, ch196, ch197, ch198, ch199, ch200, ch201, ch202, ch203, ch204, ch205, ch206, ch207, ch208, ch209, ch210, ch211, ch212, ch213, ch214, ch215, ch216, ch217, ch218, ch219, ch220, ch221, ch222, ch223, ch224, ch225, ch226, ch227, ch228, ch229, ch230, ch231, ch232]
@@ -10653,6 +11003,12 @@ scanLists:
   - id: scan12
     name: GMRS
     channels: [ch330, ch331, ch332, ch333, ch334, ch335, ch336, ch337]
+  - id: scan13
+    name: Simplex
+    channels: [ch1, ch2, ch3, ch4, ch5, ch6, ch7, ch8, ch9, ch11, ch10]
+  - id: scan14
+    name: Hotspot
+    channels: [ch339, ch340, ch341, ch342, ch343, ch344, ch345, ch346, ch347, ch348, ch349, ch350, ch351, ch352, ch353, ch354, ch355]
 positioning:
   - aprs:
       id: aprs1
